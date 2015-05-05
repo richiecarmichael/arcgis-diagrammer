@@ -1,0 +1,706 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="BITMAP_ANNOTATION_FEATURE_CLASS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_annotation_feature_class.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_APHABETICAL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_aphabetical.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_CATALOG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_catalog.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_CATEGORIZED" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_categorized.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_CODED_VALUE_DOMAIN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_coded_value_domain.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_DIMENSION_FEATURE_CLASS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_dimension_feature_class.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_ERRORS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_errors.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_ERRORS_ITEM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_errors_item.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_FEATURE_DATASET" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_feature_dataset.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_FIELD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_field.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_FOLDER_CLOSED" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_folder_closed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_FOLDER_OPENED" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_folder_opened.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_GEODATABASE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_geodatabase.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_GEOMETRIC_NETWORK" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_geometric_network.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_LINK" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_link.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_MULTIPATCH_FEATURE_CLASS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_multipatch_feature_class.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_NETWORK_DATASET" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_network_dataset.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_POINT_FEATURE_CLASS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_point_feature_class.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_POLYGON_FEATURE_CLASS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_polygon_feature_class.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_POLYLINE_FEATURE_CLASS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_polyline_feature_class.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_RANGE_DOMAIN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_range_domain.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_RASTER_BAND" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_raster_band.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_RASTER_CATALOG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_raster_catalog.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_RASTER_DATASET" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_raster_dataset.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_REFRESH" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_refresh.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_RELATIONSHIP_CLASS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_relationship_class.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_SUBTYPE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_subtype.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_TABLE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_table.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_TERRAIN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_terrain.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_TOPOLOGY" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_topology.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_WARNINGS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_warnings.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_WARNINGS_ITEM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_warnings_item.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FILE_DATA_REPORT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\xml\file_data_report.xslt;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="FILE_DOMAIN_CODEDVALUE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\xml\file_domain_codedvalue.xml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="FILE_DOMAIN_RANGE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\xml\file_domain_range.xml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="FILE_FEATURECLASS_ANNOTATION" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\xml\file_featureclass_annotation.xml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="FILE_FEATURECLASS_DIMENSION" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\xml\file_featureclass_dimension.xml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="FILE_FEATURECLASS_MULTIPATCH" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\xml\file_featureclass_multipatch.xml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="FILE_FEATURECLASS_POINT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\xml\file_featureclass_point.xml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="FILE_FEATURECLASS_POLYGON" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\xml\file_featureclass_polygon.xml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="FILE_FEATURECLASS_POLYLINE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\xml\file_featureclass_polyline.xml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="FILE_FEATUREDATASET" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\xml\file_featuredataset.xml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="FILE_GEOMETRIC_NETWORK" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\xml\file_geometric_network.xml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="FILE_NETWORK" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\xml\file_network.xml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="FILE_RASTERBAND" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\xml\file_rasterband.xml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="FILE_RASTERCATALOG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\xml\file_rastercatalog.xml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="FILE_RASTERDATASET" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\xml\file_rasterdataset.xml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="FILE_RELATIONSHIPCLASS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\xml\file_relationshipclass.xml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="FILE_SCHEMA_REPORT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\xml\file_schema_report.xslt;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="FILE_SUBTYPE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\xml\file_subtype.xml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="FILE_TABLE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\xml\file_table.xml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="FILE_TOPOLOGY" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\xml\file_topology.xml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="TEXT_ADD_CODED_VALUE" xml:space="preserve">
+    <value>Add Coded Value</value>
+  </data>
+  <data name="TEXT_ADD_CODED_VALUE_ITEM" xml:space="preserve">
+    <value>Add Coded Value Item</value>
+  </data>
+  <data name="TEXT_ADD_FIELD" xml:space="preserve">
+    <value>Add Field</value>
+  </data>
+  <data name="TEXT_ADD_INDEX" xml:space="preserve">
+    <value>Add Index</value>
+  </data>
+  <data name="TEXT_ADD_INDEX_FIELD" xml:space="preserve">
+    <value>Add Index Field</value>
+  </data>
+  <data name="TEXT_ADD_SUBTYPE_FIELD" xml:space="preserve">
+    <value>Add Subtype Field</value>
+  </data>
+  <data name="TEXT_ADD_TO_INDEXES" xml:space="preserve">
+    <value>Add to Indexes</value>
+  </data>
+  <data name="TEXT_ALL_FILES" xml:space="preserve">
+    <value>All Files</value>
+  </data>
+  <data name="TEXT_ALPHABETICAL" xml:space="preserve">
+    <value>Alphabetical</value>
+  </data>
+  <data name="TEXT_ANNOTATION" xml:space="preserve">
+    <value>Annotation</value>
+  </data>
+  <data name="TEXT_ANNOTATION_DESCRIPTION" xml:space="preserve">
+    <value>A geodatabase feature class that stores text or graphics that provide information about features or general areas of a map (annotation)</value>
+  </data>
+  <data name="TEXT_APPLICATION" xml:space="preserve">
+    <value>ArcGIS Diagrammer</value>
+  </data>
+  <data name="TEXT_ATTRIBUTED_RELATIONSHIP" xml:space="preserve">
+    <value>Attributed Relationship</value>
+  </data>
+  <data name="TEXT_CATALOG_VIEW" xml:space="preserve">
+    <value>Catalog View</value>
+  </data>
+  <data name="TEXT_CATEGORIZED" xml:space="preserve">
+    <value>Categorized</value>
+  </data>
+  <data name="TEXT_CLEAR_" xml:space="preserve">
+    <value>&amp;Clear</value>
+  </data>
+  <data name="TEXT_CLEAR_ALL_" xml:space="preserve">
+    <value>Clear &amp;All</value>
+  </data>
+  <data name="TEXT_CODED_VALUE" xml:space="preserve">
+    <value>Coded Value</value>
+  </data>
+  <data name="TEXT_CODED_VALUE_DESCRIPTION" xml:space="preserve">
+    <value>A type of attribute domain that defines a set of permissible values for an attribute in a geodatabase. A coded value domain consists of a code and its equivalent value</value>
+  </data>
+  <data name="TEXT_CODED_VALUE_DOMAIN" xml:space="preserve">
+    <value>Coded Value Domain</value>
+  </data>
+  <data name="TEXT_COMPLEX_EDGE" xml:space="preserve">
+    <value>Complex Edge</value>
+  </data>
+  <data name="TEXT_DATA" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="TEXT_DATA_REPORT" xml:space="preserve">
+    <value>Data Report</value>
+  </data>
+  <data name="TEXT_DATASETS" xml:space="preserve">
+    <value>Datasets</value>
+  </data>
+  <data name="TEXT_DEFAULT_" xml:space="preserve">
+    <value>&amp;Default</value>
+  </data>
+  <data name="TEXT_DEFAULT_BR" xml:space="preserve">
+    <value>(Default)</value>
+  </data>
+  <data name="TEXT_DELETE" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="TEXT_DELETE_CODED_VALUE_ITEM" xml:space="preserve">
+    <value>Delete Coded Value Item</value>
+  </data>
+  <data name="TEXT_DELETE_FIELD" xml:space="preserve">
+    <value>Delete Field</value>
+  </data>
+  <data name="TEXT_DELETE_INDEX" xml:space="preserve">
+    <value>Delete Index</value>
+  </data>
+  <data name="TEXT_DELETE_INDEX_FIELD" xml:space="preserve">
+    <value>Delete Index Field</value>
+  </data>
+  <data name="TEXT_DELETE_SUBTYPE_FIELD" xml:space="preserve">
+    <value>Delete Subtype Field</value>
+  </data>
+  <data name="TEXT_DESCRIPTION" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="TEXT_DIMENSION" xml:space="preserve">
+    <value>Dimension</value>
+  </data>
+  <data name="TEXT_DIMENSION_DESCRIPTION" xml:space="preserve">
+    <value>A geodatabase feature class that stores dimension features</value>
+  </data>
+  <data name="TEXT_DOMAIN" xml:space="preserve">
+    <value>Domain</value>
+  </data>
+  <data name="TEXT_DOMAIN_VIEW" xml:space="preserve">
+    <value>Domain View</value>
+  </data>
+  <data name="TEXT_DOMAINS" xml:space="preserve">
+    <value>Domains</value>
+  </data>
+  <data name="TEXT_EMPTY" xml:space="preserve">
+    <value>Empty</value>
+  </data>
+  <data name="TEXT_ERRORS" xml:space="preserve">
+    <value>Errors</value>
+  </data>
+  <data name="TEXT_ERRORS_" xml:space="preserve">
+    <value>{0} Errors</value>
+  </data>
+  <data name="TEXT_EXTENT_BR" xml:space="preserve">
+    <value>(Extent)</value>
+  </data>
+  <data name="TEXT_FEATURE_CLASS" xml:space="preserve">
+    <value>Feature Class</value>
+  </data>
+  <data name="TEXT_FEATURE_DATASET" xml:space="preserve">
+    <value>Feature Dataset</value>
+  </data>
+  <data name="TEXT_FEATURE_DATASET_DESCRIPTION" xml:space="preserve">
+    <value>A collection of feature classes stored together that share the same spatial reference; that is, they share a coordinate system, and their features fall within a common geographic area</value>
+  </data>
+  <data name="TEXT_FEATURECLASSES" xml:space="preserve">
+    <value>FeatureClasses</value>
+  </data>
+  <data name="TEXT_FILE_GEODATABASE_" xml:space="preserve">
+    <value>&amp;File Geodatabase</value>
+  </data>
+  <data name="TEXT_FLASH_" xml:space="preserve">
+    <value>&amp;Flash</value>
+  </data>
+  <data name="TEXT_GEOMETRIC_NETWORK" xml:space="preserve">
+    <value>Geometric Network</value>
+  </data>
+  <data name="TEXT_GEOMETRIC_NETWORK_DESCRIPTION" xml:space="preserve">
+    <value>Edge and junction features that represent a linear network, such as a utility or hydrologic system, in which the connectivity of features is based on their geometric coincidence</value>
+  </data>
+  <data name="TEXT_GEOMETRY_DEFINITION_BR" xml:space="preserve">
+    <value>(Geometric Definition)</value>
+  </data>
+  <data name="TEXT_METADATA_BR" xml:space="preserve">
+    <value>(Metadata)</value>
+  </data>
+  <data name="TEXT_MULTIPATCH" xml:space="preserve">
+    <value>Multipatch</value>
+  </data>
+  <data name="TEXT_MULTIPATCH_DESCRIPTION" xml:space="preserve">
+    <value>A type of geometry comprised of planar three-dimensional rings and triangles, used in combination to model objects that occupy discrete area or volume in three-dimensional space</value>
+  </data>
+  <data name="TEXT_NETWORK" xml:space="preserve">
+    <value>Network</value>
+  </data>
+  <data name="TEXT_NETWORK_DESCRIPTION" xml:space="preserve">
+    <value>A collection of topologically connected network elements (edges, junctions, and turns) that are derived from network sources, typically used to represent a linear network, such as a road or subway system</value>
+  </data>
+  <data name="TEXT_NETWORK_DIRECTIONS_BR" xml:space="preserve">
+    <value>(Network Directions)</value>
+  </data>
+  <data name="TEXT_NO_ARCGIS_DESKTOP" xml:space="preserve">
+    <value>You do not have ArcGIS Desktop Installed</value>
+  </data>
+  <data name="TEXT_NONE_BR" xml:space="preserve">
+    <value>(None)</value>
+  </data>
+  <data name="TEXT_NOT_AVAILABLE_BR" xml:space="preserve">
+    <value>(Not Available)</value>
+  </data>
+  <data name="TEXT_OPEN_DIAGRAM" xml:space="preserve">
+    <value>Open Diagram</value>
+  </data>
+  <data name="TEXT_OPEN_EDGE_EDGE_DIAGRAM" xml:space="preserve">
+    <value>Open Edge Edge Diagram</value>
+  </data>
+  <data name="TEXT_OPEN_EDGE_JUNCTION_DIAGRAM" xml:space="preserve">
+    <value>Open Edge Junction Diagram</value>
+  </data>
+  <data name="TEXT_OPEN_RULE_DIAGRAM" xml:space="preserve">
+    <value>Open Rule Diagram</value>
+  </data>
+  <data name="TEXT_OPEN_XML_WORKSPACE_DOCUMENT" xml:space="preserve">
+    <value>Open XML Workspace Document</value>
+  </data>
+  <data name="TEXT_OTHER" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="TEXT_PERSONAL_GEODATABASE_" xml:space="preserve">
+    <value>&amp;Personal Geodatabase</value>
+  </data>
+  <data name="TEXT_POINT" xml:space="preserve">
+    <value>Point</value>
+  </data>
+  <data name="TEXT_POINT_BR" xml:space="preserve">
+    <value>(Point)</value>
+  </data>
+  <data name="TEXT_POINT_DESCRIPTION" xml:space="preserve">
+    <value>A collection of geographic features with the point geometry, the same attributes, and the same spatial reference</value>
+  </data>
+  <data name="TEXT_POLYGON" xml:space="preserve">
+    <value>Polygon</value>
+  </data>
+  <data name="TEXT_POLYGON_DESCRIPTION" xml:space="preserve">
+    <value>A collection of geographic features with the polygon geometry, the same attributes, and the same spatial reference</value>
+  </data>
+  <data name="TEXT_POLYLINE" xml:space="preserve">
+    <value>Polyline</value>
+  </data>
+  <data name="TEXT_POLYLINE_DESCRIPTION" xml:space="preserve">
+    <value>A collection of geographic features with the line geometry, the same attributes, and the same spatial reference</value>
+  </data>
+  <data name="TEXT_RANGE" xml:space="preserve">
+    <value>Range</value>
+  </data>
+  <data name="TEXT_RANGE_DESCRIPTION" xml:space="preserve">
+    <value>A type of attribute domain that defines the range of permissible values for a numeric attribute</value>
+  </data>
+  <data name="TEXT_RANGE_DOMAIN" xml:space="preserve">
+    <value>Range Domain</value>
+  </data>
+  <data name="TEXT_RASTER_BAND" xml:space="preserve">
+    <value>Raster Band</value>
+  </data>
+  <data name="TEXT_RASTER_BAND_DESCRIPTION" xml:space="preserve">
+    <value>One layer in a raster dataset that represents data values for a specific range in the electromagnetic spectrum (such as ultraviolet, blue, green, red, and infrared), or radar, or other values derived by manipulating the original image bands.</value>
+  </data>
+  <data name="TEXT_RASTER_CATALOG" xml:space="preserve">
+    <value>Raster Catalog</value>
+  </data>
+  <data name="TEXT_RASTER_CATALOG_DESCRIPTION" xml:space="preserve">
+    <value>A collection of raster datasets defined in a table of any format, in which the records define the individual raster datasets that are included in the catalog</value>
+  </data>
+  <data name="TEXT_RASTER_DATASET" xml:space="preserve">
+    <value>Raster Dataset</value>
+  </data>
+  <data name="TEXT_RASTER_DATASET_DESCRIPTION" xml:space="preserve">
+    <value>A raster spatial data model that is stored in the geodatabase</value>
+  </data>
+  <data name="TEXT_RASTER_DEFINITION_BR" xml:space="preserve">
+    <value>(Raster Definition)</value>
+  </data>
+  <data name="TEXT_RASTERS" xml:space="preserve">
+    <value>Rasters</value>
+  </data>
+  <data name="TEXT_REFRESH" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="TEXT_RELATIONSHIP" xml:space="preserve">
+    <value>Relationship</value>
+  </data>
+  <data name="TEXT_RELATIONSHIP_DESCRIPTION" xml:space="preserve">
+    <value>An item in the geodatabase that stores information about a relationship</value>
+  </data>
+  <data name="TEXT_REPORT_CREDIT" xml:space="preserve">
+    <value>Developed by The Applications Prototype Lab, ESRI Inc</value>
+  </data>
+  <data name="TEXT_REPORT_DISCLAIMER" xml:space="preserve">
+    <value>ArcGIS Diagrammer is prototype application and is not supported by ESRI. The commands assoicated with this application and the output generated by those commands are not to be used in a production environment.
+ ESRI is not reponsible for errors, ommission or any damages resulting from the use of application and associated output. Use of this application is
+ conditional on the acceptance of this statement.</value>
+  </data>
+  <data name="TEXT_REPORT_TITLE" xml:space="preserve">
+    <value>ArcGIS Diagrammer</value>
+  </data>
+  <data name="TEXT_SCHEMA" xml:space="preserve">
+    <value>Schema</value>
+  </data>
+  <data name="TEXT_SCHEMA_REPORT" xml:space="preserve">
+    <value>Schema Report</value>
+  </data>
+  <data name="TEXT_SCHEMA_VIEW" xml:space="preserve">
+    <value>Schema View</value>
+  </data>
+  <data name="TEXT_SCROLL_" xml:space="preserve">
+    <value>&amp;Scroll</value>
+  </data>
+  <data name="TEXT_SDE_CONNECTION_" xml:space="preserve">
+    <value>&amp;SDE Connection</value>
+  </data>
+  <data name="TEXT_SELECT" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="TEXT_SELECT_" xml:space="preserve">
+    <value>S&amp;elect</value>
+  </data>
+  <data name="TEXT_SELECT__" xml:space="preserve">
+    <value>S&amp;elect...</value>
+  </data>
+  <data name="TEXT_SELECT_EXISTING_GEODATABASE" xml:space="preserve">
+    <value>Select an Existing Geodatabase</value>
+  </data>
+  <data name="TEXT_SET_AS_DEFAULT" xml:space="preserve">
+    <value>Set As Default</value>
+  </data>
+  <data name="TEXT_SIMPLE_EDGE" xml:space="preserve">
+    <value>Simple Edge</value>
+  </data>
+  <data name="TEXT_SIMPLE_JUNCTION" xml:space="preserve">
+    <value>Simple Junction</value>
+  </data>
+  <data name="TEXT_SPATIAL_REFERENCE_BR" xml:space="preserve">
+    <value>(Spatial Reference)</value>
+  </data>
+  <data name="TEXT_STORAGE_DEFINITION_BR" xml:space="preserve">
+    <value>(Storage Definition)</value>
+  </data>
+  <data name="TEXT_SUBTYPE" xml:space="preserve">
+    <value>Subtype</value>
+  </data>
+  <data name="TEXT_SUBTYPE_DESCRIPTION" xml:space="preserve">
+    <value>A subset of features in a feature class or objects in a table that share the same attributes</value>
+  </data>
+  <data name="TEXT_TABLE" xml:space="preserve">
+    <value>Table</value>
+  </data>
+  <data name="TEXT_TABLE_DESCRIPTION" xml:space="preserve">
+    <value>A set of data elements arranged in rows and columns</value>
+  </data>
+  <data name="TEXT_TERRAIN" xml:space="preserve">
+    <value>Terrain</value>
+  </data>
+  <data name="TEXT_TERRAIN_DESCRIPTION" xml:space="preserve">
+    <value>A surface based on vector measurements stored in a geodatabase. Terrains live inside feature datasets and are comprised of one or more feature classes and rules.</value>
+  </data>
+  <data name="TEXT_TEXT_PARSE_FAILED" xml:space="preserve">
+    <value>Text Parse Failed</value>
+  </data>
+  <data name="TEXT_TOPOLOGY" xml:space="preserve">
+    <value>Topology</value>
+  </data>
+  <data name="TEXT_TOPOLOGY_DESCRIPTION" xml:space="preserve">
+    <value>The arrangement that constrains how point, line, and polygon features share geometry</value>
+  </data>
+  <data name="TEXT_UNTITLED" xml:space="preserve">
+    <value>Untitled</value>
+  </data>
+  <data name="TEXT_VALIDATE" xml:space="preserve">
+    <value>Validate</value>
+  </data>
+  <data name="TEXT_VALIDATOR_" xml:space="preserve">
+    <value>&amp;Validator</value>
+  </data>
+  <data name="TEXT_VIEW_METADATA" xml:space="preserve">
+    <value>View Metadata</value>
+  </data>
+  <data name="TEXT_WARNINGS" xml:space="preserve">
+    <value>Warnings</value>
+  </data>
+  <data name="TEXT_WARNINGS_" xml:space="preserve">
+    <value>{0} Warnings</value>
+  </data>
+  <data name="TEXT_WKT_BR" xml:space="preserve">
+    <value>(WKT)</value>
+  </data>
+  <data name="TEXT_WORKSPACE_BR" xml:space="preserve">
+    <value>(Workspace)</value>
+  </data>
+  <data name="TEXT_XML_WORKSPACE_DOCUMENT" xml:space="preserve">
+    <value>XML Workspace Document</value>
+  </data>
+  <data name="FILE_GEODATABASE_EXCHANGE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\xml\file_geodatabase_exchange.xsd;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="FILE_XML_REPORT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\xml\file_xml_report.xslt;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="TEXT_CLASS_BR" xml:space="preserve">
+    <value>(Class)</value>
+  </data>
+  <data name="TEXT_DROPPED_OBJECT_NOT_GEODATABASE" xml:space="preserve">
+    <value>The dropped object is not a geodatabase or SDE connection.</value>
+  </data>
+  <data name="TEXT_DROPPED_OBJECT_NOT_VALID_GEODATABASE" xml:space="preserve">
+    <value>The dropped object is not a valid geodatabase.</value>
+  </data>
+  <data name="TEXT_GEODATABASE_SCHEMA_EXPORT_FAILED" xml:space="preserve">
+    <value>ArcGIS Diagrammer could not export the geodatabase schema to XML because:</value>
+  </data>
+  <data name="TEXT_GEODATABASE_SCHEMA_EXPORT_FAILED_1A" xml:space="preserve">
+    <value>1) An invalid network weight association, or</value>
+  </data>
+  <data name="TEXT_GEODATABASE_SCHEMA_EXPORT_FAILED_1B" xml:space="preserve">
+    <value>2) The connection to the ESRI OLE DB provider is invalid</value>
+  </data>
+  <data name="TEXT_GEODATABASE_SCHEMA_EXPORT_FAILED_2" xml:space="preserve">
+    <value>one or more datasets could not be found.</value>
+  </data>
+  <data name="TEXT_GEODATABASE_SCHEMA_EXPORT_FAILED_3" xml:space="preserve">
+    <value>one or more tables could not be found.</value>
+  </data>
+  <data name="TEXT_GEODATABASE_SCHEMA_EXPORT_FAILED_4" xml:space="preserve">
+    <value>a feature class's default subtype code cannot be retrieved or is invalid.</value>
+  </data>
+  <data name="TEXT_GEODATABASE_SCHEMA_EXPORT_FAILED_5" xml:space="preserve">
+    <value>it could not instantiate an object class' COM class extension.</value>
+  </data>
+  <data name="TEXT_GEODATABASE_SCHEMA_EXPORT_FAILED_6" xml:space="preserve">
+    <value>the current user has insufficient permissions to access a dataset.</value>
+  </data>
+  <data name="TEXT_GEODATABASE_SCHEMA_EXPORT_FAILED_7" xml:space="preserve">
+    <value>a table column is invalid or missing.</value>
+  </data>
+  <data name="TEXT_GEODATABASE_SCHEMA_EXPORT_FAILED_8A" xml:space="preserve">
+    <value>of an unknown or unspecified error. Please attempt exporting the geodatabase's</value>
+  </data>
+  <data name="TEXT_GEODATABASE_SCHEMA_EXPORT_FAILED_8B" xml:space="preserve">
+    <value>schema to XML using ArcCatalog.</value>
+  </data>
+  <data name="TEXT_GEODATABASE_SCHEMA_EXPORT_FAILED_9A" xml:space="preserve">
+    <value>of an unknown or unspecified error. Please attempt exporting the geodatabase's</value>
+  </data>
+  <data name="TEXT_GEODATABASE_SCHEMA_EXPORT_FAILED_9B" xml:space="preserve">
+    <value>schema to XML using ArcCatalog.</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="FILE_TERRAIN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\xml\file_terrain.xml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+</root>

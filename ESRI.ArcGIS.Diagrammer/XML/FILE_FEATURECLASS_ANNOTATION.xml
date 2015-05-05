@@ -1,0 +1,768 @@
+<esri:Workspace xmlns:esri='http://www.esri.com/schemas/ArcGIS/9.2' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xs='http://www.w3.org/2001/XMLSchema'>
+  <WorkspaceDefinition xsi:type='esri:WorkspaceDefinition'>
+    <WorkspaceType>esriLocalDatabaseWorkspace</WorkspaceType>
+    <Version></Version>
+    <Domains xsi:type='esri:ArrayOfDomain'>
+      <Domain xsi:type='esri:CodedValueDomain'>
+        <DomainName>AnnotationStatus</DomainName>
+        <FieldType>esriFieldTypeSmallInteger</FieldType>
+        <MergePolicy>esriMPTDefaultValue</MergePolicy>
+        <SplitPolicy>esriSPTDuplicate</SplitPolicy>
+        <Description>Valid annotation state values.</Description>
+        <Owner></Owner>
+        <CodedValues xsi:type='esri:ArrayOfCodedValue'>
+          <CodedValue xsi:type='esri:CodedValue'>
+            <Name>Placed</Name>
+            <Code xsi:type='xs:short'>0</Code>
+          </CodedValue>
+          <CodedValue xsi:type='esri:CodedValue'>
+            <Name>Unplaced</Name>
+            <Code xsi:type='xs:short'>1</Code>
+          </CodedValue>
+        </CodedValues>
+      </Domain>
+      <Domain xsi:type='esri:CodedValueDomain'>
+        <DomainName>VerticalAlignment</DomainName>
+        <FieldType>esriFieldTypeSmallInteger</FieldType>
+        <MergePolicy>esriMPTDefaultValue</MergePolicy>
+        <SplitPolicy>esriSPTDuplicate</SplitPolicy>
+        <Description>Valid symbol vertical alignment values.</Description>
+        <Owner></Owner>
+        <CodedValues xsi:type='esri:ArrayOfCodedValue'>
+          <CodedValue xsi:type='esri:CodedValue'>
+            <Name>Top</Name>
+            <Code xsi:type='xs:short'>0</Code>
+          </CodedValue>
+          <CodedValue xsi:type='esri:CodedValue'>
+            <Name>Center</Name>
+            <Code xsi:type='xs:short'>1</Code>
+          </CodedValue>
+          <CodedValue xsi:type='esri:CodedValue'>
+            <Name>Baseline</Name>
+            <Code xsi:type='xs:short'>2</Code>
+          </CodedValue>
+          <CodedValue xsi:type='esri:CodedValue'>
+            <Name>Bottom</Name>
+            <Code xsi:type='xs:short'>3</Code>
+          </CodedValue>
+        </CodedValues>
+      </Domain>
+      <Domain xsi:type='esri:CodedValueDomain'>
+        <DomainName>HorizontalAlignment</DomainName>
+        <FieldType>esriFieldTypeSmallInteger</FieldType>
+        <MergePolicy>esriMPTDefaultValue</MergePolicy>
+        <SplitPolicy>esriSPTDuplicate</SplitPolicy>
+        <Description>Valid horizontal symbol alignment values.</Description>
+        <Owner></Owner>
+        <CodedValues xsi:type='esri:ArrayOfCodedValue'>
+          <CodedValue xsi:type='esri:CodedValue'>
+            <Name>Left</Name>
+            <Code xsi:type='xs:short'>0</Code>
+          </CodedValue>
+          <CodedValue xsi:type='esri:CodedValue'>
+            <Name>Center</Name>
+            <Code xsi:type='xs:short'>1</Code>
+          </CodedValue>
+          <CodedValue xsi:type='esri:CodedValue'>
+            <Name>Right</Name>
+            <Code xsi:type='xs:short'>2</Code>
+          </CodedValue>
+          <CodedValue xsi:type='esri:CodedValue'>
+            <Name>Full</Name>
+            <Code xsi:type='xs:short'>3</Code>
+          </CodedValue>
+        </CodedValues>
+      </Domain>
+      <Domain xsi:type='esri:CodedValueDomain'>
+        <DomainName>BooleanSymbolValue</DomainName>
+        <FieldType>esriFieldTypeSmallInteger</FieldType>
+        <MergePolicy>esriMPTDefaultValue</MergePolicy>
+        <SplitPolicy>esriSPTDuplicate</SplitPolicy>
+        <Description>Valid values are Yes and No.</Description>
+        <Owner></Owner>
+        <CodedValues xsi:type='esri:ArrayOfCodedValue'>
+          <CodedValue xsi:type='esri:CodedValue'>
+            <Name>Yes</Name>
+            <Code xsi:type='xs:short'>1</Code>
+          </CodedValue>
+          <CodedValue xsi:type='esri:CodedValue'>
+            <Name>No</Name>
+            <Code xsi:type='xs:short'>0</Code>
+          </CodedValue>
+        </CodedValues>
+      </Domain>
+    </Domains>
+    <DatasetDefinitions xsi:type='esri:ArrayOfDataElement'>
+      <DataElement xsi:type='esri:DEFeatureClass'>
+        <CatalogPath>/FC=Empty</CatalogPath>
+        <Name>Empty</Name>
+        <DatasetType>esriDTFeatureClass</DatasetType>
+        <DSID>1</DSID>
+        <Versioned>false</Versioned>
+        <CanVersion>false</CanVersion>
+        <HasOID>true</HasOID>
+        <OIDFieldName>OBJECTID</OIDFieldName>
+        <Fields xsi:type='esri:Fields'>
+          <FieldArray xsi:type='esri:ArrayOfField'>
+            <Field xsi:type='esri:Field'>
+              <Name>OBJECTID</Name>
+              <Type>esriFieldTypeOID</Type>
+              <IsNullable>false</IsNullable>
+              <Length>4</Length>
+              <Precision>0</Precision>
+              <Scale>0</Scale>
+              <Required>true</Required>
+              <Editable>false</Editable>
+              <DomainFixed>true</DomainFixed>
+              <AliasName>OBJECTID</AliasName>
+              <ModelName>OBJECTID</ModelName>
+            </Field>
+            <Field xsi:type='esri:Field'>
+              <Name>SHAPE</Name>
+              <Type>esriFieldTypeGeometry</Type>
+              <IsNullable>true</IsNullable>
+              <Length>0</Length>
+              <Precision>0</Precision>
+              <Scale>0</Scale>
+              <Required>true</Required>
+              <DomainFixed>true</DomainFixed>
+              <GeometryDef xsi:type='esri:GeometryDef'>
+                <AvgNumPoints>0</AvgNumPoints>
+                <GeometryType>esriGeometryPolygon</GeometryType>
+                <HasM>false</HasM>
+                <HasZ>false</HasZ>
+                <SpatialReference xsi:type='esri:GeographicCoordinateSystem'>
+                  <WKT>GEOGCS[&quot;GCS_WGS_1984&quot;,DATUM[&quot;D_WGS_1984&quot;,SPHEROID[&quot;WGS_1984&quot;,6378137.0,298.257223563]],PRIMEM[&quot;Greenwich&quot;,0.0],UNIT[&quot;Degree&quot;,0.0174532925199433]]</WKT>
+                  <XOrigin>-400</XOrigin>
+                  <YOrigin>-400</YOrigin>
+                  <XYScale>1000000000</XYScale>
+                  <XYTolerance>8.98315284119522E-09</XYTolerance>
+                  <HighPrecision>true</HighPrecision>
+                  <LeftLongitude>-180</LeftLongitude>
+                </SpatialReference>
+                <GridSize0>1000</GridSize0>
+              </GeometryDef>
+              <AliasName>SHAPE</AliasName>
+              <ModelName>SHAPE</ModelName>
+            </Field>
+            <Field xsi:type='esri:Field'>
+              <Name>FeatureID</Name>
+              <Type>esriFieldTypeInteger</Type>
+              <IsNullable>true</IsNullable>
+              <Length>4</Length>
+              <Precision>0</Precision>
+              <Scale>0</Scale>
+              <Required>true</Required>
+              <DomainFixed>true</DomainFixed>
+              <AliasName>FeatureID</AliasName>
+              <ModelName>FeatureID</ModelName>
+            </Field>
+            <Field xsi:type='esri:Field'>
+              <Name>ZOrder</Name>
+              <Type>esriFieldTypeInteger</Type>
+              <IsNullable>true</IsNullable>
+              <Length>4</Length>
+              <Precision>0</Precision>
+              <Scale>0</Scale>
+              <Required>true</Required>
+              <DomainFixed>true</DomainFixed>
+              <AliasName>ZOrder</AliasName>
+              <ModelName>ZOrder</ModelName>
+            </Field>
+            <Field xsi:type='esri:Field'>
+              <Name>AnnotationClassID</Name>
+              <Type>esriFieldTypeInteger</Type>
+              <IsNullable>true</IsNullable>
+              <Length>4</Length>
+              <Precision>0</Precision>
+              <Scale>0</Scale>
+              <Required>true</Required>
+              <DomainFixed>true</DomainFixed>
+              <AliasName>AnnotationClassID</AliasName>
+              <ModelName>AnnotationClassID</ModelName>
+            </Field>
+            <Field xsi:type='esri:Field'>
+              <Name>Element</Name>
+              <Type>esriFieldTypeBlob</Type>
+              <IsNullable>true</IsNullable>
+              <Length>0</Length>
+              <Precision>0</Precision>
+              <Scale>0</Scale>
+              <Required>true</Required>
+              <DomainFixed>true</DomainFixed>
+              <AliasName>Element</AliasName>
+              <ModelName>Element</ModelName>
+            </Field>
+            <Field xsi:type='esri:Field'>
+              <Name>SymbolID</Name>
+              <Type>esriFieldTypeInteger</Type>
+              <IsNullable>true</IsNullable>
+              <Length>4</Length>
+              <Precision>0</Precision>
+              <Scale>0</Scale>
+              <Required>true</Required>
+              <AliasName>SymbolID</AliasName>
+              <ModelName>SymbolID</ModelName>
+            </Field>
+            <Field xsi:type='esri:Field'>
+              <Name>Status</Name>
+              <Type>esriFieldTypeSmallInteger</Type>
+              <IsNullable>true</IsNullable>
+              <Length>2</Length>
+              <Precision>0</Precision>
+              <Scale>0</Scale>
+              <Required>true</Required>
+              <DomainFixed>true</DomainFixed>
+              <AliasName>Status</AliasName>
+              <ModelName>Status</ModelName>
+              <DefaultValue xsi:type='xs:double'>0</DefaultValue>
+              <Domain xsi:type='esri:CodedValueDomain'>
+                <DomainName>AnnotationStatus</DomainName>
+                <FieldType>esriFieldTypeSmallInteger</FieldType>
+                <MergePolicy>esriMPTDefaultValue</MergePolicy>
+                <SplitPolicy>esriSPTDuplicate</SplitPolicy>
+                <Description>Valid annotation state values.</Description>
+                <Owner></Owner>
+                <CodedValues xsi:type='esri:ArrayOfCodedValue'>
+                  <CodedValue xsi:type='esri:CodedValue'>
+                    <Name>Placed</Name>
+                    <Code xsi:type='xs:short'>0</Code>
+                  </CodedValue>
+                  <CodedValue xsi:type='esri:CodedValue'>
+                    <Name>Unplaced</Name>
+                    <Code xsi:type='xs:short'>1</Code>
+                  </CodedValue>
+                </CodedValues>
+              </Domain>
+            </Field>
+            <Field xsi:type='esri:Field'>
+              <Name>TextString</Name>
+              <Type>esriFieldTypeString</Type>
+              <IsNullable>true</IsNullable>
+              <Length>255</Length>
+              <Precision>0</Precision>
+              <Scale>0</Scale>
+            </Field>
+            <Field xsi:type='esri:Field'>
+              <Name>FontName</Name>
+              <Type>esriFieldTypeString</Type>
+              <IsNullable>true</IsNullable>
+              <Length>255</Length>
+              <Precision>0</Precision>
+              <Scale>0</Scale>
+            </Field>
+            <Field xsi:type='esri:Field'>
+              <Name>FontSize</Name>
+              <Type>esriFieldTypeDouble</Type>
+              <IsNullable>true</IsNullable>
+              <Length>8</Length>
+              <Precision>0</Precision>
+              <Scale>0</Scale>
+            </Field>
+            <Field xsi:type='esri:Field'>
+              <Name>Bold</Name>
+              <Type>esriFieldTypeSmallInteger</Type>
+              <IsNullable>true</IsNullable>
+              <Length>2</Length>
+              <Precision>0</Precision>
+              <Scale>0</Scale>
+              <AliasName>Bold</AliasName>
+              <ModelName>Bold</ModelName>
+              <Domain xsi:type='esri:CodedValueDomain'>
+                <DomainName>BooleanSymbolValue</DomainName>
+                <FieldType>esriFieldTypeSmallInteger</FieldType>
+                <MergePolicy>esriMPTDefaultValue</MergePolicy>
+                <SplitPolicy>esriSPTDuplicate</SplitPolicy>
+                <Description>Valid values are Yes and No.</Description>
+                <Owner></Owner>
+                <CodedValues xsi:type='esri:ArrayOfCodedValue'>
+                  <CodedValue xsi:type='esri:CodedValue'>
+                    <Name>Yes</Name>
+                    <Code xsi:type='xs:short'>1</Code>
+                  </CodedValue>
+                  <CodedValue xsi:type='esri:CodedValue'>
+                    <Name>No</Name>
+                    <Code xsi:type='xs:short'>0</Code>
+                  </CodedValue>
+                </CodedValues>
+              </Domain>
+            </Field>
+            <Field xsi:type='esri:Field'>
+              <Name>Italic</Name>
+              <Type>esriFieldTypeSmallInteger</Type>
+              <IsNullable>true</IsNullable>
+              <Length>2</Length>
+              <Precision>0</Precision>
+              <Scale>0</Scale>
+              <AliasName>Italic</AliasName>
+              <ModelName>Italic</ModelName>
+              <Domain xsi:type='esri:CodedValueDomain'>
+                <DomainName>BooleanSymbolValue</DomainName>
+                <FieldType>esriFieldTypeSmallInteger</FieldType>
+                <MergePolicy>esriMPTDefaultValue</MergePolicy>
+                <SplitPolicy>esriSPTDuplicate</SplitPolicy>
+                <Description>Valid values are Yes and No.</Description>
+                <Owner></Owner>
+                <CodedValues xsi:type='esri:ArrayOfCodedValue'>
+                  <CodedValue xsi:type='esri:CodedValue'>
+                    <Name>Yes</Name>
+                    <Code xsi:type='xs:short'>1</Code>
+                  </CodedValue>
+                  <CodedValue xsi:type='esri:CodedValue'>
+                    <Name>No</Name>
+                    <Code xsi:type='xs:short'>0</Code>
+                  </CodedValue>
+                </CodedValues>
+              </Domain>
+            </Field>
+            <Field xsi:type='esri:Field'>
+              <Name>Underline</Name>
+              <Type>esriFieldTypeSmallInteger</Type>
+              <IsNullable>true</IsNullable>
+              <Length>2</Length>
+              <Precision>0</Precision>
+              <Scale>0</Scale>
+              <AliasName>Underline</AliasName>
+              <ModelName>Underline</ModelName>
+              <Domain xsi:type='esri:CodedValueDomain'>
+                <DomainName>BooleanSymbolValue</DomainName>
+                <FieldType>esriFieldTypeSmallInteger</FieldType>
+                <MergePolicy>esriMPTDefaultValue</MergePolicy>
+                <SplitPolicy>esriSPTDuplicate</SplitPolicy>
+                <Description>Valid values are Yes and No.</Description>
+                <Owner></Owner>
+                <CodedValues xsi:type='esri:ArrayOfCodedValue'>
+                  <CodedValue xsi:type='esri:CodedValue'>
+                    <Name>Yes</Name>
+                    <Code xsi:type='xs:short'>1</Code>
+                  </CodedValue>
+                  <CodedValue xsi:type='esri:CodedValue'>
+                    <Name>No</Name>
+                    <Code xsi:type='xs:short'>0</Code>
+                  </CodedValue>
+                </CodedValues>
+              </Domain>
+            </Field>
+            <Field xsi:type='esri:Field'>
+              <Name>VerticalAlignment</Name>
+              <Type>esriFieldTypeSmallInteger</Type>
+              <IsNullable>true</IsNullable>
+              <Length>2</Length>
+              <Precision>0</Precision>
+              <Scale>0</Scale>
+              <AliasName>VerticalAlignment</AliasName>
+              <ModelName>VerticalAlignment</ModelName>
+              <Domain xsi:type='esri:CodedValueDomain'>
+                <DomainName>VerticalAlignment</DomainName>
+                <FieldType>esriFieldTypeSmallInteger</FieldType>
+                <MergePolicy>esriMPTDefaultValue</MergePolicy>
+                <SplitPolicy>esriSPTDuplicate</SplitPolicy>
+                <Description>Valid symbol vertical alignment values.</Description>
+                <Owner></Owner>
+                <CodedValues xsi:type='esri:ArrayOfCodedValue'>
+                  <CodedValue xsi:type='esri:CodedValue'>
+                    <Name>Top</Name>
+                    <Code xsi:type='xs:short'>0</Code>
+                  </CodedValue>
+                  <CodedValue xsi:type='esri:CodedValue'>
+                    <Name>Center</Name>
+                    <Code xsi:type='xs:short'>1</Code>
+                  </CodedValue>
+                  <CodedValue xsi:type='esri:CodedValue'>
+                    <Name>Baseline</Name>
+                    <Code xsi:type='xs:short'>2</Code>
+                  </CodedValue>
+                  <CodedValue xsi:type='esri:CodedValue'>
+                    <Name>Bottom</Name>
+                    <Code xsi:type='xs:short'>3</Code>
+                  </CodedValue>
+                </CodedValues>
+              </Domain>
+            </Field>
+            <Field xsi:type='esri:Field'>
+              <Name>HorizontalAlignment</Name>
+              <Type>esriFieldTypeSmallInteger</Type>
+              <IsNullable>true</IsNullable>
+              <Length>2</Length>
+              <Precision>0</Precision>
+              <Scale>0</Scale>
+              <AliasName>HorizontalAlignment</AliasName>
+              <ModelName>HorizontalAlignment</ModelName>
+              <Domain xsi:type='esri:CodedValueDomain'>
+                <DomainName>HorizontalAlignment</DomainName>
+                <FieldType>esriFieldTypeSmallInteger</FieldType>
+                <MergePolicy>esriMPTDefaultValue</MergePolicy>
+                <SplitPolicy>esriSPTDuplicate</SplitPolicy>
+                <Description>Valid horizontal symbol alignment values.</Description>
+                <Owner></Owner>
+                <CodedValues xsi:type='esri:ArrayOfCodedValue'>
+                  <CodedValue xsi:type='esri:CodedValue'>
+                    <Name>Left</Name>
+                    <Code xsi:type='xs:short'>0</Code>
+                  </CodedValue>
+                  <CodedValue xsi:type='esri:CodedValue'>
+                    <Name>Center</Name>
+                    <Code xsi:type='xs:short'>1</Code>
+                  </CodedValue>
+                  <CodedValue xsi:type='esri:CodedValue'>
+                    <Name>Right</Name>
+                    <Code xsi:type='xs:short'>2</Code>
+                  </CodedValue>
+                  <CodedValue xsi:type='esri:CodedValue'>
+                    <Name>Full</Name>
+                    <Code xsi:type='xs:short'>3</Code>
+                  </CodedValue>
+                </CodedValues>
+              </Domain>
+            </Field>
+            <Field xsi:type='esri:Field'>
+              <Name>XOffset</Name>
+              <Type>esriFieldTypeDouble</Type>
+              <IsNullable>true</IsNullable>
+              <Length>8</Length>
+              <Precision>0</Precision>
+              <Scale>0</Scale>
+            </Field>
+            <Field xsi:type='esri:Field'>
+              <Name>YOffset</Name>
+              <Type>esriFieldTypeDouble</Type>
+              <IsNullable>true</IsNullable>
+              <Length>8</Length>
+              <Precision>0</Precision>
+              <Scale>0</Scale>
+            </Field>
+            <Field xsi:type='esri:Field'>
+              <Name>Angle</Name>
+              <Type>esriFieldTypeDouble</Type>
+              <IsNullable>true</IsNullable>
+              <Length>8</Length>
+              <Precision>0</Precision>
+              <Scale>0</Scale>
+            </Field>
+            <Field xsi:type='esri:Field'>
+              <Name>FontLeading</Name>
+              <Type>esriFieldTypeDouble</Type>
+              <IsNullable>true</IsNullable>
+              <Length>8</Length>
+              <Precision>0</Precision>
+              <Scale>0</Scale>
+            </Field>
+            <Field xsi:type='esri:Field'>
+              <Name>WordSpacing</Name>
+              <Type>esriFieldTypeDouble</Type>
+              <IsNullable>true</IsNullable>
+              <Length>8</Length>
+              <Precision>0</Precision>
+              <Scale>0</Scale>
+            </Field>
+            <Field xsi:type='esri:Field'>
+              <Name>CharacterWidth</Name>
+              <Type>esriFieldTypeDouble</Type>
+              <IsNullable>true</IsNullable>
+              <Length>8</Length>
+              <Precision>0</Precision>
+              <Scale>0</Scale>
+            </Field>
+            <Field xsi:type='esri:Field'>
+              <Name>CharacterSpacing</Name>
+              <Type>esriFieldTypeDouble</Type>
+              <IsNullable>true</IsNullable>
+              <Length>8</Length>
+              <Precision>0</Precision>
+              <Scale>0</Scale>
+            </Field>
+            <Field xsi:type='esri:Field'>
+              <Name>FlipAngle</Name>
+              <Type>esriFieldTypeDouble</Type>
+              <IsNullable>true</IsNullable>
+              <Length>8</Length>
+              <Precision>0</Precision>
+              <Scale>0</Scale>
+            </Field>
+            <Field xsi:type='esri:Field'>
+              <Name>Override</Name>
+              <Type>esriFieldTypeInteger</Type>
+              <IsNullable>true</IsNullable>
+              <Length>4</Length>
+              <Precision>0</Precision>
+              <Scale>0</Scale>
+              <Editable>false</Editable>
+              <AliasName>Override</AliasName>
+              <ModelName>Override</ModelName>
+            </Field>
+            <Field xsi:type='esri:Field'>
+              <Name>SHAPE_Length</Name>
+              <Type>esriFieldTypeDouble</Type>
+              <IsNullable>true</IsNullable>
+              <Length>8</Length>
+              <Precision>0</Precision>
+              <Scale>0</Scale>
+              <Required>true</Required>
+              <Editable>false</Editable>
+              <AliasName>SHAPE_Length</AliasName>
+              <ModelName>SHAPE_Length</ModelName>
+            </Field>
+            <Field xsi:type='esri:Field'>
+              <Name>SHAPE_Area</Name>
+              <Type>esriFieldTypeDouble</Type>
+              <IsNullable>true</IsNullable>
+              <Length>8</Length>
+              <Precision>0</Precision>
+              <Scale>0</Scale>
+              <Required>true</Required>
+              <Editable>false</Editable>
+              <AliasName>SHAPE_Area</AliasName>
+              <ModelName>SHAPE_Area</ModelName>
+            </Field>
+          </FieldArray>
+        </Fields>
+        <Indexes xsi:type='esri:Indexes'>
+          <IndexArray xsi:type='esri:ArrayOfIndex'>
+            <Index xsi:type='esri:Index'>
+              <Name>FDO_OBJECTID</Name>
+              <IsUnique>true</IsUnique>
+              <IsAscending>true</IsAscending>
+              <Fields xsi:type='esri:Fields'>
+                <FieldArray xsi:type='esri:ArrayOfField'>
+                  <Field xsi:type='esri:Field'>
+                    <Name>OBJECTID</Name>
+                    <Type>esriFieldTypeOID</Type>
+                    <IsNullable>false</IsNullable>
+                    <Length>4</Length>
+                    <Precision>0</Precision>
+                    <Scale>0</Scale>
+                    <Required>true</Required>
+                    <Editable>false</Editable>
+                    <DomainFixed>true</DomainFixed>
+                    <AliasName>OBJECTID</AliasName>
+                    <ModelName>OBJECTID</ModelName>
+                  </Field>
+                </FieldArray>
+              </Fields>
+            </Index>
+            <Index xsi:type='esri:Index'>
+              <Name>FDO_SHAPE</Name>
+              <IsUnique>false</IsUnique>
+              <IsAscending>false</IsAscending>
+              <Fields xsi:type='esri:Fields'>
+                <FieldArray xsi:type='esri:ArrayOfField'>
+                  <Field xsi:type='esri:Field'>
+                    <Name>SHAPE</Name>
+                    <Type>esriFieldTypeGeometry</Type>
+                    <IsNullable>true</IsNullable>
+                    <Length>0</Length>
+                    <Precision>0</Precision>
+                    <Scale>0</Scale>
+                    <Required>true</Required>
+                    <DomainFixed>true</DomainFixed>
+                    <GeometryDef xsi:type='esri:GeometryDef'>
+                      <AvgNumPoints>0</AvgNumPoints>
+                      <GeometryType>esriGeometryPolygon</GeometryType>
+                      <HasM>false</HasM>
+                      <HasZ>false</HasZ>
+                      <SpatialReference xsi:type='esri:GeographicCoordinateSystem'>
+                        <WKT>GEOGCS[&quot;GCS_WGS_1984&quot;,DATUM[&quot;D_WGS_1984&quot;,SPHEROID[&quot;WGS_1984&quot;,6378137.0,298.257223563]],PRIMEM[&quot;Greenwich&quot;,0.0],UNIT[&quot;Degree&quot;,0.0174532925199433]]</WKT>
+                        <XOrigin>-400</XOrigin>
+                        <YOrigin>-400</YOrigin>
+                        <XYScale>1000000000</XYScale>
+                        <XYTolerance>8.98315284119522E-09</XYTolerance>
+                        <HighPrecision>true</HighPrecision>
+                        <LeftLongitude>-180</LeftLongitude>
+                      </SpatialReference>
+                      <GridSize0>1000</GridSize0>
+                    </GeometryDef>
+                    <AliasName>SHAPE</AliasName>
+                    <ModelName>SHAPE</ModelName>
+                  </Field>
+                </FieldArray>
+              </Fields>
+            </Index>
+            <Index xsi:type='esri:Index'>
+              <Name>AnnoClassID_Index_1</Name>
+              <IsUnique>false</IsUnique>
+              <IsAscending>true</IsAscending>
+              <Fields xsi:type='esri:Fields'>
+                <FieldArray xsi:type='esri:ArrayOfField'>
+                  <Field xsi:type='esri:Field'>
+                    <Name>AnnotationClassID</Name>
+                    <Type>esriFieldTypeInteger</Type>
+                    <IsNullable>true</IsNullable>
+                    <Length>4</Length>
+                    <Precision>0</Precision>
+                    <Scale>0</Scale>
+                    <Required>true</Required>
+                    <DomainFixed>true</DomainFixed>
+                    <AliasName>AnnotationClassID</AliasName>
+                    <ModelName>AnnotationClassID</ModelName>
+                  </Field>
+                </FieldArray>
+              </Fields>
+            </Index>
+            <Index xsi:type='esri:Index'>
+              <Name>Status_Index_1</Name>
+              <IsUnique>false</IsUnique>
+              <IsAscending>true</IsAscending>
+              <Fields xsi:type='esri:Fields'>
+                <FieldArray xsi:type='esri:ArrayOfField'>
+                  <Field xsi:type='esri:Field'>
+                    <Name>Status</Name>
+                    <Type>esriFieldTypeSmallInteger</Type>
+                    <IsNullable>true</IsNullable>
+                    <Length>2</Length>
+                    <Precision>0</Precision>
+                    <Scale>0</Scale>
+                    <Required>true</Required>
+                    <DomainFixed>true</DomainFixed>
+                    <AliasName>Status</AliasName>
+                    <ModelName>Status</ModelName>
+                    <DefaultValue xsi:type='xs:double'>0</DefaultValue>
+                    <Domain xsi:type='esri:CodedValueDomain'>
+                      <DomainName>AnnotationStatus</DomainName>
+                      <FieldType>esriFieldTypeSmallInteger</FieldType>
+                      <MergePolicy>esriMPTDefaultValue</MergePolicy>
+                      <SplitPolicy>esriSPTDuplicate</SplitPolicy>
+                      <Description>Valid annotation state values.</Description>
+                      <Owner></Owner>
+                      <CodedValues xsi:type='esri:ArrayOfCodedValue'>
+                        <CodedValue xsi:type='esri:CodedValue'>
+                          <Name>Placed</Name>
+                          <Code xsi:type='xs:short'>0</Code>
+                        </CodedValue>
+                        <CodedValue xsi:type='esri:CodedValue'>
+                          <Name>Unplaced</Name>
+                          <Code xsi:type='xs:short'>1</Code>
+                        </CodedValue>
+                      </CodedValues>
+                    </Domain>
+                  </Field>
+                </FieldArray>
+              </Fields>
+            </Index>
+          </IndexArray>
+        </Indexes>
+        <CLSID>{E3676993-C682-11D2-8A2A-006097AFF44E}</CLSID>
+        <EXTCLSID>{24429589-D711-11D2-9F41-00C04F6BC6A5}</EXTCLSID>
+        <RelationshipClassNames xsi:type='esri:Names'></RelationshipClassNames>
+        <AliasName>Empty</AliasName>
+        <ModelName></ModelName>
+        <HasGlobalID>false</HasGlobalID>
+        <GlobalIDFieldName></GlobalIDFieldName>
+        <RasterFieldName></RasterFieldName>
+        <ExtensionProperties xsi:type='esri:PropertySet'>
+          <PropertyArray xsi:type='esri:ArrayOfPropertySetProperty'>
+            <PropertySetProperty xsi:type='esri:PropertySetProperty'>
+              <Key>SourceFeatureClass</Key>
+              <Value xsi:type='xs:string'></Value>
+            </PropertySetProperty>
+            <PropertySetProperty xsi:type='esri:PropertySetProperty'>
+              <Key>AnnoProperties</Key>
+              <Value xsi:type='esri:XMLPersistedObject'>
+                <Bytes>
+                  80lYHTMN0hGibwgACbbyKwAAAAACAAEAAABFQQABHA3SEaJvCAAJtvIrAQAAAAcAAgAAAAAA//8A
+                  AAAAAAAAAAEAAAD//wAA//8AAAAAAAAAAAAAAAAAAAAAAAAAAP//JgAAAEEAbgBuAG8AdABhAHQA
+                  aQBvAG4AIABDAGwAYQBzAHMAIAAxAAAAAgAAAAAAdD5atpMp0RGaQwCAx+xclgIAAAAEAJbE6X4j
+                  0dARg4MIAAm5lswDAAAAAQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP////8DAAAAAQAA
+                  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADQAAAAAAAACWxOl+I9HQEYODCAAJuZbMBAAAAAEA
+                  AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+                  AAAAAAAAAAAAAFlAAAAAAAAAWUABAAAAAAAAAAAAAAAAAAAAAACAVkABdj5atpMp0RGaQwCAx+xc
+                  lgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAIEAAAAAAAAAAAAAA
+                  AEAAAAAAAAAAAAAAAAAAAAAAA1LjC5GPzhGd4wCqAEu4UQUAAAABAAAAkAGAOAEABUFyaWFs//+R
+                  mwnXmOKeSZdXcrs55VzzAACJUlPuyUHREYgKCAAJ7HMqBgAAAAYAAAAAAAAAAAAAAAMAAAABAAAA
+                  jJVCJBHX0hGfQQDAT2vGpQcAAAACAP//AAAAAAAAAAD//wAAAAD//wAAAAAAAAAAAAAAAAAAd0Ma
+                  JtXZ0hGoBsyfhwvNWggAAAABAAAAAAADAAAAAwAAAAMAAAAAAAAAAAAAAAMAAAADAAAAAwAAAAAA
+                  AAAAAAAAAwAAAAMAAAADAAAAAAAAAP//AAAAAAAAAAAAAAAAAAByQxom1dnSEagGzJ+HC81aCQAA
+                  AAEAAgAAAAIAAAABAAAAAgAAAAIAAAADAAAAAwAAAAMAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAA
+                  AAABAAAAAgAAAAAAAAAAAAAAAAD//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+                  AAAAAAAAAAAAAAAAAAAAAAD/////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAA
+                </Bytes>
+              </Value>
+            </PropertySetProperty>
+            <PropertySetProperty xsi:type='esri:PropertySetProperty'>
+              <Key>Version</Key>
+              <Value xsi:type='xs:short'>2</Value>
+            </PropertySetProperty>
+            <PropertySetProperty xsi:type='esri:PropertySetProperty'>
+              <Key>AutoCreate</Key>
+              <Value xsi:type='xs:boolean'>true</Value>
+            </PropertySetProperty>
+            <PropertySetProperty xsi:type='esri:PropertySetProperty'>
+              <Key>ReferenceScale</Key>
+              <Value xsi:type='esri:XMLPersistedObject'>
+                <Bytes>
+                  xtrDhXhl0xGfugDAT2vGpQAAAAACAAAAAAAAQI9ACwAAAA==
+                </Bytes>
+              </Value>
+            </PropertySetProperty>
+            <PropertySetProperty xsi:type='esri:PropertySetProperty'>
+              <Key>SymbolCollection</Key>
+              <Value xsi:type='esri:XMLPersistedObject'>
+                <Bytes>
+                  ZoxdDpGN0xGfygDAT2vGpQAAAAADAAEAAAAAAAAAdD5atpMp0RGaQwCAx+xclgEAAAAEAJbE6X4j
+                  0dARg4MIAAm5lswCAAAAAQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP////8DAAAAAQAA
+                  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADQAAAAAAAACWxOl+I9HQEYODCAAJuZbMAwAAAAEA
+                  AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+                  AAAAAAAAAAAAAFlAAAAAAAAAWUABAAAAAAAAAAAAAAAAAAAAAACAVkABdj5atpMp0RGaQwCAx+xc
+                  lgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAIEAAAAAAAAAAAAAA
+                  AEAAAAAAAAAAAAAAAAAAAAAAA1LjC5GPzhGd4wCqAEu4UQQAAAABAAAAkAGAOAEABUFyaWFs//+R
+                  mwnXmOKeSZdXcrs55VzzAAAmAAAAQQBuAG4AbwB0AGEAdABpAG8AbgAgAEMAbABhAHMAcwAgADEA
+                  AAABAAAA
+                </Bytes>
+              </Value>
+            </PropertySetProperty>
+            <PropertySetProperty xsi:type='esri:PropertySetProperty'>
+              <Key>UpdateOnShapeChange</Key>
+              <Value xsi:type='xs:boolean'>false</Value>
+            </PropertySetProperty>
+            <PropertySetProperty xsi:type='esri:PropertySetProperty'>
+              <Key>RequireSymbolID</Key>
+              <Value xsi:type='xs:boolean'>false</Value>
+            </PropertySetProperty>
+            <PropertySetProperty xsi:type='esri:PropertySetProperty'>
+              <Key>AllowSymbolOverrides</Key>
+              <Value xsi:type='xs:boolean'>true</Value>
+            </PropertySetProperty>
+            <PropertySetProperty xsi:type='esri:PropertySetProperty'>
+              <Key>OverposterProperties</Key>
+              <Value xsi:type='esri:XMLPersistedObject'>
+                <Bytes>
+                  Vj3H4IhsjEm3fHhgbmiMlwAAAAACAAAAlsTpfiPR0BGDgwgACbmWzAEAAAABAAEAAOIcWKwERkxA
+                  CRdoUZA5U0CDorjUngZRQAEAAAAAAAAAAAAAQA==
+                </Bytes>
+              </Value>
+            </PropertySetProperty>
+          </PropertyArray>
+        </ExtensionProperties>
+        <ControllerMemberships xsi:type='esri:ArrayOfControllerMembership'></ControllerMemberships>
+        <FeatureType>esriFTAnnotation</FeatureType>
+        <ShapeType>esriGeometryPolygon</ShapeType>
+        <ShapeFieldName>SHAPE</ShapeFieldName>
+        <HasM>false</HasM>
+        <HasZ>false</HasZ>
+        <HasSpatialIndex>true</HasSpatialIndex>
+        <AreaFieldName>SHAPE_Area</AreaFieldName>
+        <LengthFieldName>SHAPE_Length</LengthFieldName>
+        <Extent xsi:type='esri:EnvelopeN'>
+          <SpatialReference xsi:type='esri:GeographicCoordinateSystem'>
+            <WKT>GEOGCS[&quot;GCS_WGS_1984&quot;,DATUM[&quot;D_WGS_1984&quot;,SPHEROID[&quot;WGS_1984&quot;,6378137.0,298.257223563]],PRIMEM[&quot;Greenwich&quot;,0.0],UNIT[&quot;Degree&quot;,0.0174532925199433]]</WKT>
+            <XOrigin>-400</XOrigin>
+            <YOrigin>-400</YOrigin>
+            <XYScale>1000000000</XYScale>
+            <XYTolerance>8.98315284119522E-09</XYTolerance>
+            <HighPrecision>true</HighPrecision>
+            <LeftLongitude>-180</LeftLongitude>
+          </SpatialReference>
+        </Extent>
+        <SpatialReference xsi:type='esri:GeographicCoordinateSystem'>
+          <WKT>GEOGCS[&quot;GCS_WGS_1984&quot;,DATUM[&quot;D_WGS_1984&quot;,SPHEROID[&quot;WGS_1984&quot;,6378137.0,298.257223563]],PRIMEM[&quot;Greenwich&quot;,0.0],UNIT[&quot;Degree&quot;,0.0174532925199433]]</WKT>
+          <XOrigin>-400</XOrigin>
+          <YOrigin>-400</YOrigin>
+          <XYScale>1000000000</XYScale>
+          <XYTolerance>8.98315284119522E-09</XYTolerance>
+          <HighPrecision>true</HighPrecision>
+          <LeftLongitude>-180</LeftLongitude>
+        </SpatialReference>
+      </DataElement>
+    </DatasetDefinitions>
+  </WorkspaceDefinition>
+  <WorkspaceData xsi:type='esri:WorkspaceData'></WorkspaceData>
+</esri:Workspace>

@@ -1,0 +1,133 @@
+<esri:Workspace xmlns:esri='http://www.esri.com/schemas/ArcGIS/9.2' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xs='http://www.w3.org/2001/XMLSchema'>
+  <WorkspaceDefinition xsi:type='esri:WorkspaceDefinition'>
+    <WorkspaceType>esriLocalDatabaseWorkspace</WorkspaceType>
+    <Version></Version>
+    <Domains xsi:type='esri:ArrayOfDomain'></Domains>
+    <DatasetDefinitions xsi:type='esri:ArrayOfDataElement'>
+      <DataElement xsi:type='esri:DERasterDataset'>
+        <CatalogPath>/RD=Empty</CatalogPath>
+        <Name>Empty</Name>
+        <!-- <Children xsi:type='esri:ArrayOfDataElement'>
+          <DataElement xsi:type='esri:DERasterBand'>
+            <CatalogPath>/RD=Empty/RB=Band_1</CatalogPath>
+            <Name>Band_1</Name>
+            <DatasetType>esriDTRasterBand</DatasetType>
+            <DSID>-1</DSID>
+            <Versioned>false</Versioned>
+            <CanVersion>false</CanVersion>
+            <HasOID>true</HasOID>
+            <OIDFieldName>ObjectID</OIDFieldName>
+            <Fields xsi:type='esri:Fields'>
+              <FieldArray xsi:type='esri:ArrayOfField'>
+                <Field xsi:type='esri:Field'>
+                  <Name>ObjectID</Name>
+                  <Type>esriFieldTypeOID</Type>
+                  <IsNullable>false</IsNullable>
+                  <Length>4</Length>
+                  <Precision>0</Precision>
+                  <Scale>0</Scale>
+                  <Required>true</Required>
+                  <Editable>false</Editable>
+                </Field>
+                <Field xsi:type='esri:Field'>
+                  <Name>Value</Name>
+                  <Type>esriFieldTypeInteger</Type>
+                  <IsNullable>true</IsNullable>
+                  <Length>0</Length>
+                  <Precision>0</Precision>
+                  <Scale>0</Scale>
+                </Field>
+                <Field xsi:type='esri:Field'>
+                  <Name>Count</Name>
+                  <Type>esriFieldTypeInteger</Type>
+                  <IsNullable>true</IsNullable>
+                  <Length>0</Length>
+                  <Precision>0</Precision>
+                  <Scale>0</Scale>
+                </Field>
+              </FieldArray>
+            </Fields>
+            <Indexes xsi:type='esri:Indexes'>
+              <IndexArray xsi:type='esri:ArrayOfIndex'></IndexArray>
+            </Indexes>
+            <IsInteger>true</IsInteger>
+            <MeanCellHeight>10600614</MeanCellHeight>
+            <MeanCellWidth>10600614</MeanCellWidth>
+            <Height>1</Height>
+            <Width>1</Width>
+            <PixelType>U8</PixelType>
+            <PrimaryField>1</PrimaryField>
+            <TableType>esriRasterTableValue</TableType>
+            <Extent xsi:type='esri:EnvelopeN'>
+              <XMin>41</XMin>
+              <YMin>-10600583</YMin>
+              <XMax>10600655</XMax>
+              <YMax>31</YMax>
+              <SpatialReference xsi:type='esri:GeographicCoordinateSystem'>
+                <WKT>GEOGCS[&quot;GCS_WGS_1984&quot;,DATUM[&quot;D_WGS_1984&quot;,SPHEROID[&quot;WGS_1984&quot;,6378137.0,298.257223563]],PRIMEM[&quot;Greenwich&quot;,0.0],UNIT[&quot;Degree&quot;,0.0174532925199433]]</WKT>
+                <XOrigin>-10000</XOrigin>
+                <YOrigin>-10000</YOrigin>
+                <XYScale>419430400585.937</XYScale>
+                <XYTolerance>4.76837157536991E-12</XYTolerance>
+                <HighPrecision>true</HighPrecision>
+                <LeftLongitude>-180</LeftLongitude>
+              </SpatialReference>
+            </Extent>
+            <SpatialReference xsi:type='esri:GeographicCoordinateSystem'>
+              <WKT>GEOGCS[&quot;GCS_WGS_1984&quot;,DATUM[&quot;D_WGS_1984&quot;,SPHEROID[&quot;WGS_1984&quot;,6378137.0,298.257223563]],PRIMEM[&quot;Greenwich&quot;,0.0],UNIT[&quot;Degree&quot;,0.0174532925199433]]</WKT>
+              <XOrigin>-10000</XOrigin>
+              <YOrigin>-10000</YOrigin>
+              <XYScale>419430400585.937</XYScale>
+              <XYTolerance>4.76837157536991E-12</XYTolerance>
+              <HighPrecision>true</HighPrecision>
+              <LeftLongitude>-180</LeftLongitude>
+            </SpatialReference>
+          </DataElement>
+        </Children>  -->
+        <DatasetType>esriDTRasterDataset</DatasetType>
+        <DSID>-1</DSID>
+        <Versioned>false</Versioned>
+        <CanVersion>false</CanVersion>
+        <Extent xsi:type='esri:EnvelopeN'>
+          <XMin>41</XMin>
+          <YMin>-10600583</YMin>
+          <XMax>10600655</XMax>
+          <YMax>31</YMax>
+          <SpatialReference xsi:type='esri:GeographicCoordinateSystem'>
+            <WKT>GEOGCS[&quot;GCS_WGS_1984&quot;,DATUM[&quot;D_WGS_1984&quot;,SPHEROID[&quot;WGS_1984&quot;,6378137.0,298.257223563]],PRIMEM[&quot;Greenwich&quot;,0.0],UNIT[&quot;Degree&quot;,0.0174532925199433]]</WKT>
+            <XOrigin>-10000</XOrigin>
+            <YOrigin>-10000</YOrigin>
+            <XYScale>419430400585.937</XYScale>
+            <XYTolerance>4.76837157536991E-12</XYTolerance>
+            <HighPrecision>true</HighPrecision>
+            <LeftLongitude>-180</LeftLongitude>
+          </SpatialReference>
+        </Extent>
+        <SpatialReference xsi:type='esri:GeographicCoordinateSystem'>
+          <WKT>GEOGCS[&quot;GCS_WGS_1984&quot;,DATUM[&quot;D_WGS_1984&quot;,SPHEROID[&quot;WGS_1984&quot;,6378137.0,298.257223563]],PRIMEM[&quot;Greenwich&quot;,0.0],UNIT[&quot;Degree&quot;,0.0174532925199433]]</WKT>
+          <XOrigin>-10000</XOrigin>
+          <YOrigin>-10000</YOrigin>
+          <XYScale>419430400585.937</XYScale>
+          <XYTolerance>4.76837157536991E-12</XYTolerance>
+          <HighPrecision>true</HighPrecision>
+          <LeftLongitude>-180</LeftLongitude>
+        </SpatialReference>
+        <Format>FGDBR</Format>
+        <CompressionType>LZ77</CompressionType>
+        <SensorType></SensorType>
+        <!-- <BandCount>1</BandCount> -->
+        <Permanent>true</Permanent>
+        <StorageDef xsi:type='esri:RasterStorageDef'>
+          <CompressionQuality>75</CompressionQuality>
+          <CompressionType>esriRasterCompressionLZ77</CompressionType>
+          <PyramidLevel>-1</PyramidLevel>
+          <PyramidResampleType>RSP_NearestNeighbor</PyramidResampleType>
+          <Tiled>false</Tiled>
+          <TileHeight>128</TileHeight>
+          <TileWidth>128</TileWidth>
+        </StorageDef>
+      </DataElement>
+    </DatasetDefinitions>
+  </WorkspaceDefinition>
+  <WorkspaceData xsi:type='esri:WorkspaceData'></WorkspaceData>
+</esri:Workspace>

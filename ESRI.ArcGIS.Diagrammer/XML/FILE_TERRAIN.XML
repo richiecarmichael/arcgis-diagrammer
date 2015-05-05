@@ -1,0 +1,155 @@
+<esri:Workspace xmlns:esri='http://www.esri.com/schemas/ArcGIS/10.0' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xs='http://www.w3.org/2001/XMLSchema'>
+  <WorkspaceDefinition xsi:type='esri:WorkspaceDefinition'>
+    <WorkspaceType>esriLocalDatabaseWorkspace</WorkspaceType>
+    <Version></Version>
+    <Domains xsi:type='esri:ArrayOfDomain'></Domains>
+    <DatasetDefinitions xsi:type='esri:ArrayOfDataElement'>
+      <DataElement xsi:type='esri:DEFeatureDataset'>
+        <CatalogPath>/FD=Empty</CatalogPath>
+        <Name>Empty</Name>
+        <Children xsi:type='esri:ArrayOfDataElement'>
+          <DataElement xsi:type='esri:DETerrain'>
+            <CatalogPath>/FD=Empty/TERR=Empty_Terrain</CatalogPath>
+            <Name>Empty_Terrain</Name>
+            <DatasetType>esriDTTerrain</DatasetType>
+            <DSID>-1</DSID>
+            <Versioned>false</Versioned>
+            <CanVersion>false</CanVersion>
+            <ConfigurationKeyword>TERRAIN_DEFAULTS</ConfigurationKeyword>
+            <Extent xsi:type='esri:EnvelopeN'>
+              <SpatialReference xsi:type='esri:GeographicCoordinateSystem'>
+                <WKT>GEOGCS[&quot;GCS_WGS_1984&quot;,DATUM[&quot;D_WGS_1984&quot;,SPHEROID[&quot;WGS_1984&quot;,6378137.0,298.257223563]],PRIMEM[&quot;Greenwich&quot;,0.0],UNIT[&quot;Degree&quot;,0.0174532925199433]]</WKT>
+                <XOrigin>-400</XOrigin>
+                <YOrigin>-400</YOrigin>
+                <XYScale>1000000000</XYScale>
+                <ZOrigin>-100000</ZOrigin>
+                <ZScale>10000</ZScale>
+                <MOrigin>-100000</MOrigin>
+                <MScale>10000</MScale>
+                <XYTolerance>8.98315284119522E-09</XYTolerance>
+                <ZTolerance>0.001</ZTolerance>
+                <MTolerance>0.001</MTolerance>
+                <HighPrecision>true</HighPrecision>
+                <LeftLongitude>-180</LeftLongitude>
+              </SpatialReference>
+            </Extent>
+            <SpatialReference xsi:type='esri:GeographicCoordinateSystem'>
+              <WKT>GEOGCS[&quot;GCS_WGS_1984&quot;,DATUM[&quot;D_WGS_1984&quot;,SPHEROID[&quot;WGS_1984&quot;,6378137.0,298.257223563]],PRIMEM[&quot;Greenwich&quot;,0.0],UNIT[&quot;Degree&quot;,0.0174532925199433]]</WKT>
+              <XOrigin>-400</XOrigin>
+              <YOrigin>-400</YOrigin>
+              <XYScale>1000000000</XYScale>
+              <ZOrigin>-100000</ZOrigin>
+              <ZScale>10000</ZScale>
+              <MOrigin>-100000</MOrigin>
+              <MScale>10000</MScale>
+              <XYTolerance>8.98315284119522E-09</XYTolerance>
+              <ZTolerance>0.001</ZTolerance>
+              <MTolerance>0.001</MTolerance>
+              <HighPrecision>true</HighPrecision>
+              <LeftLongitude>-180</LeftLongitude>
+            </SpatialReference>
+            <FeatureDatasetName>topography</FeatureDatasetName>
+            <PyramidType>1</PyramidType>
+            <WindowSizeMethod>0</WindowSizeMethod>
+            <WindowSizeZThreshold>1</WindowSizeZThreshold>
+            <WindowSizeZThresholdStrategy>0</WindowSizeZThresholdStrategy>
+            <TileSize>500</TileSize>
+            <MaxShapeSize>3500</MaxShapeSize>
+            <MaxOverviewSize>50000</MaxOverviewSize>
+            <ExtentDomain xsi:type='esri:EnvelopeN'>
+              <SpatialReference xsi:type='esri:GeographicCoordinateSystem'>
+                <WKT>GEOGCS[&quot;GCS_WGS_1984&quot;,DATUM[&quot;D_WGS_1984&quot;,SPHEROID[&quot;WGS_1984&quot;,6378137.0,298.257223563]],PRIMEM[&quot;Greenwich&quot;,0.0],UNIT[&quot;Degree&quot;,0.0174532925199433]]</WKT>
+                <XOrigin>-400</XOrigin>
+                <YOrigin>-400</YOrigin>
+                <XYScale>1000000000</XYScale>
+                <ZOrigin>-100000</ZOrigin>
+                <ZScale>10000</ZScale>
+                <MOrigin>-100000</MOrigin>
+                <MScale>10000</MScale>
+                <XYTolerance>8.98315284119522E-09</XYTolerance>
+                <ZTolerance>0.001</ZTolerance>
+                <MTolerance>0.001</MTolerance>
+                <HighPrecision>true</HighPrecision>
+                <LeftLongitude>-180</LeftLongitude>
+              </SpatialReference>
+            </ExtentDomain>
+            <ExtentAOI xsi:nil='true'/>
+            <TerrainDataSources xsi:type='esri:ArrayOfTerrainDataSource' />
+            <TerrainPyramidLevelWindowSizes xsi:type='esri:ArrayOfTerrainPyramidLevelWindowSize'>
+              <TerrainPyramidLevelWindowSize xsi:type='esri:TerrainPyramidLevelWindowSize'>
+                <PyramidLevelStatus>1</PyramidLevelStatus>
+                <PointCount>-1</PointCount>
+                <MaxScale>1000</MaxScale>
+                <Resolution>2</Resolution>
+              </TerrainPyramidLevelWindowSize>
+              <TerrainPyramidLevelWindowSize xsi:type='esri:TerrainPyramidLevelWindowSize'>
+                <PyramidLevelStatus>1</PyramidLevelStatus>
+                <PointCount>-1</PointCount>
+                <MaxScale>2500</MaxScale>
+                <Resolution>4</Resolution>
+              </TerrainPyramidLevelWindowSize>
+              <TerrainPyramidLevelWindowSize xsi:type='esri:TerrainPyramidLevelWindowSize'>
+                <PyramidLevelStatus>1</PyramidLevelStatus>
+                <PointCount>-1</PointCount>
+                <MaxScale>5000</MaxScale>
+                <Resolution>8</Resolution>
+              </TerrainPyramidLevelWindowSize>
+              <TerrainPyramidLevelWindowSize xsi:type='esri:TerrainPyramidLevelWindowSize'>
+                <PyramidLevelStatus>1</PyramidLevelStatus>
+                <PointCount>-1</PointCount>
+                <MaxScale>10000</MaxScale>
+                <Resolution>16</Resolution>
+              </TerrainPyramidLevelWindowSize>
+              <TerrainPyramidLevelWindowSize xsi:type='esri:TerrainPyramidLevelWindowSize'>
+                <PyramidLevelStatus>1</PyramidLevelStatus>
+                <PointCount>-1</PointCount>
+                <MaxScale>20000</MaxScale>
+                <Resolution>32</Resolution>
+              </TerrainPyramidLevelWindowSize>
+            </TerrainPyramidLevelWindowSizes>
+            <TerrainID>1</TerrainID>
+            <Version>13</Version>
+          </DataElement>
+        </Children>
+        <DatasetType>esriDTFeatureDataset</DatasetType>
+        <DSID>3</DSID>
+        <Versioned>false</Versioned>
+        <CanVersion>false</CanVersion>
+        <ConfigurationKeyword></ConfigurationKeyword>
+        <Extent xsi:type='esri:EnvelopeN'>
+          <SpatialReference xsi:type='esri:GeographicCoordinateSystem'>
+            <WKT>GEOGCS[&quot;GCS_WGS_1984&quot;,DATUM[&quot;D_WGS_1984&quot;,SPHEROID[&quot;WGS_1984&quot;,6378137.0,298.257223563]],PRIMEM[&quot;Greenwich&quot;,0.0],UNIT[&quot;Degree&quot;,0.0174532925199433]]</WKT>
+            <XOrigin>-400</XOrigin>
+            <YOrigin>-400</YOrigin>
+            <XYScale>1000000000</XYScale>
+            <ZOrigin>-100000</ZOrigin>
+            <ZScale>10000</ZScale>
+            <MOrigin>-100000</MOrigin>
+            <MScale>10000</MScale>
+            <XYTolerance>8.98315284119522E-09</XYTolerance>
+            <ZTolerance>0.001</ZTolerance>
+            <MTolerance>0.001</MTolerance>
+            <HighPrecision>true</HighPrecision>
+            <LeftLongitude>-180</LeftLongitude>
+          </SpatialReference>
+        </Extent>
+        <SpatialReference xsi:type='esri:GeographicCoordinateSystem'>
+          <WKT>GEOGCS[&quot;GCS_WGS_1984&quot;,DATUM[&quot;D_WGS_1984&quot;,SPHEROID[&quot;WGS_1984&quot;,6378137.0,298.257223563]],PRIMEM[&quot;Greenwich&quot;,0.0],UNIT[&quot;Degree&quot;,0.0174532925199433]]</WKT>
+          <XOrigin>-400</XOrigin>
+          <YOrigin>-400</YOrigin>
+          <XYScale>1000000000</XYScale>
+          <ZOrigin>-100000</ZOrigin>
+          <ZScale>10000</ZScale>
+          <MOrigin>-100000</MOrigin>
+          <MScale>10000</MScale>
+          <XYTolerance>8.98315284119522E-09</XYTolerance>
+          <ZTolerance>0.001</ZTolerance>
+          <MTolerance>0.001</MTolerance>
+          <HighPrecision>true</HighPrecision>
+          <LeftLongitude>-180</LeftLongitude>
+        </SpatialReference>
+      </DataElement>
+    </DatasetDefinitions>
+  </WorkspaceDefinition>
+  <WorkspaceData xsi:type='esri:WorkspaceData'></WorkspaceData>
+</esri:Workspace>

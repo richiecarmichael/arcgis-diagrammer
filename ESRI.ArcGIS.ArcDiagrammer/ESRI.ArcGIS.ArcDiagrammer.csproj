@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C3EB0230-8254-42C4-BE5B-9746B5A9273F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ESRI.ArcGIS.ArcDiagrammer</RootNamespace>
+    <AssemblyName>ESRI.ArcGIS.ArcDiagrammer</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <ApplicationIcon>ICON\DIAGRAMMER.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Interop.MSXML">
+      <HintPath>..\MSXML\Interop.MSXML.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="SandBar, Version=1.4.2.1, Culture=neutral, PublicKeyToken=75b7ec17dd7c14c3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Divelements\SandBar.dll</HintPath>
+    </Reference>
+    <Reference Include="SandDock, Version=2.4.3.1, Culture=neutral, PublicKeyToken=75b7ec17dd7c14c3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Divelements\SandDock.dll</HintPath>
+    </Reference>
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="TabbedDocumentTerrain.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TabbedDocumentTerrain.Designer.cs">
+      <DependentUpon>TabbedDocumentTerrain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabbedDocumentXmlReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TabbedDocumentXmlReport.Designer.cs">
+      <DependentUpon>TabbedDocumentXmlReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabbedDocumentTopologyRule.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TabbedDocumentTopologyRule.Designer.cs">
+      <DependentUpon>TabbedDocumentTopologyRule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ITabModel.cs" />
+    <Compile Include="ITabPrinter.cs" />
+    <Compile Include="ITabReport.cs" />
+    <Compile Include="TabbedDocumentTopology.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TabbedDocumentTopology.Designer.cs">
+      <DependentUpon>TabbedDocumentTopology.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabbedDocumentGeometricNetworkEJ.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TabbedDocumentGeometricNetworkEJ.Designer.cs">
+      <DependentUpon>TabbedDocumentGeometricNetworkEJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabbedDocumentGeometricNetworkEE.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TabbedDocumentGeometricNetworkEE.Designer.cs">
+      <DependentUpon>TabbedDocumentGeometricNetworkEE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabbedDocumentGeometricNetwork.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TabbedDocumentGeometricNetwork.Designer.cs">
+      <DependentUpon>TabbedDocumentGeometricNetwork.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAbout.designer.cs">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDiagrammer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDiagrammer.Designer.cs">
+      <DependentUpon>FormDiagrammer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOptions.Designer.cs">
+      <DependentUpon>FormOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPrinterSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPrinterSetup.Designer.cs">
+      <DependentUpon>FormPrinterSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormWindows.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWindows.Designer.cs">
+      <DependentUpon>FormWindows.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetadataStylesheetConverter.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="TabbedDocumentTerrain.resx">
+      <DependentUpon>TabbedDocumentTerrain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabbedDocumentXmlReport.resx">
+      <DependentUpon>TabbedDocumentXmlReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="TabbedDocumentTopologyRule.resx">
+      <DependentUpon>TabbedDocumentTopologyRule.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabbedDocumentTopology.resx">
+      <DependentUpon>TabbedDocumentTopology.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabbedDocumentGeometricNetworkEJ.resx">
+      <DependentUpon>TabbedDocumentGeometricNetworkEJ.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabbedDocumentGeometricNetworkEE.resx">
+      <DependentUpon>TabbedDocumentGeometricNetworkEE.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabbedDocumentGeometricNetwork.resx">
+      <DependentUpon>TabbedDocumentGeometricNetwork.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAbout.resx">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDiagrammer.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormDiagrammer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOptions.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPrinterSetup.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormPrinterSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWindows.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormWindows.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabbedDocumentDataReport.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TabbedDocumentDataReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabbedDocumentDomain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TabbedDocumentDomain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabbedDocumentMetadata.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TabbedDocumentMetadata.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabbedDocumentRelationship.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TabbedDocumentRelationship.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabbedDocumentSchema.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TabbedDocumentSchema.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabbedDocumentSchemaReport.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TabbedDocumentSchemaReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="SettingsWindow.cs" />
+    <Compile Include="TabbedDocumentDataReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TabbedDocumentDataReport.Designer.cs">
+      <DependentUpon>TabbedDocumentDataReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabbedDocumentDomain.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TabbedDocumentDomain.Designer.cs">
+      <DependentUpon>TabbedDocumentDomain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabbedDocumentMetadata.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TabbedDocumentMetadata.Designer.cs">
+      <DependentUpon>TabbedDocumentMetadata.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabbedDocumentRelationship.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TabbedDocumentRelationship.Designer.cs">
+      <DependentUpon>TabbedDocumentRelationship.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabbedDocumentSchema.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TabbedDocumentSchema.Designer.cs">
+      <DependentUpon>TabbedDocumentSchema.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabbedDocumentSchemaReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TabbedDocumentSchemaReport.Designer.cs">
+      <DependentUpon>TabbedDocumentSchemaReport.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BITMAP\BITMAP_ALIGN_BOTTOM.png" />
+    <Content Include="BITMAP\BITMAP_ALIGN_CENTER.png" />
+    <Content Include="BITMAP\BITMAP_ALIGN_MIDDLE.png" />
+    <Content Include="BITMAP\BITMAP_ALIGN_LEFT.png" />
+    <Content Include="BITMAP\BITMAP_ALIGN_RIGHT.png" />
+    <Content Include="BITMAP\BITMAP_ALIGN_TOP.png" />
+    <Content Include="BITMAP\BITMAP_BLACK.png" />
+    <Content Include="BITMAP\BITMAP_BLUE.png" />
+    <Content Include="BITMAP\BITMAP_CLOSE.png" />
+    <Content Include="BITMAP\BITMAP_COPY.png" />
+    <Content Include="BITMAP\BITMAP_CUT.png" />
+    <Content Include="BITMAP\BITMAP_DELETE.png" />
+    <Content Include="BITMAP\BITMAP_ERROR.png" />
+    <Content Include="BITMAP\BITMAP_ESRI.png" />
+    <Content Include="BITMAP\BITMAP_EXPORT.png" />
+    <Content Include="BITMAP\BITMAP_HELP.png" />
+    <Content Include="BITMAP\BITMAP_LAYOUT_CIRCULAR.png" />
+    <Content Include="BITMAP\BITMAP_LAYOUT_FORCEDDIRECT.png" />
+    <Content Include="BITMAP\BITMAP_LAYOUT_HIERACHICAL.png" />
+    <Content Include="BITMAP\BITMAP_LAYOUT_ORTHOGONAL.png" />
+    <Content Include="BITMAP\BITMAP_LAYOUT_TREE.png" />
+    <Content Include="BITMAP\BITMAP_MODE_LINK.png" />
+    <Content Include="BITMAP\BITMAP_MODE_NORMAL.png" />
+    <Content Include="BITMAP\BITMAP_NEW.png" />
+    <Content Include="BITMAP\BITMAP_OK.png" />
+    <Content Include="BITMAP\BITMAP_OPEN.png" />
+    <Content Include="BITMAP\BITMAP_PASTE.png" />
+    <Content Include="BITMAP\BITMAP_REDO.png" />
+    <Content Include="BITMAP\BITMAP_REMOVE_CODED_VALUE_ITEM.png" />
+    <Content Include="BITMAP\BITMAP_SAVE.png" />
+    <Content Include="BITMAP\BITMAP_SAVEAS.png" />
+    <Content Include="BITMAP\BITMAP_SELECT_ALL.png" />
+    <Content Include="BITMAP\BITMAP_SILVER.png" />
+    <Content Include="BITMAP\BITMAP_SPLIT_HORIZONTAL.png" />
+    <Content Include="BITMAP\BITMAP_SPLIT_VERTICAL.png" />
+    <Content Include="BITMAP\BITMAP_UNDO.png" />
+    <Content Include="BITMAP\BITMAP_WARNING.png" />
+    <Content Include="BITMAP\BITMAP_ZOOM_IN.png" />
+    <Content Include="BITMAP\BITMAP_ZOOM_OUT.png" />
+    <Content Include="BITMAP\BITMAP_ZOOM_TO_ACTUAL_SIZE.png" />
+    <Content Include="BITMAP\BITMAP_ZOOM_TO_SELECTION.png" />
+    <Content Include="BITMAP\BITMAP_ZOOM_TO_WINDOW.png" />
+    <Content Include="BITMAP\BITMAP_MESSAGES.png" />
+    <Content Include="BITMAP\BITMAP_PRINT.png" />
+    <Content Include="BITMAP\BITMAP_PRINT_PREVIEW.png" />
+    <Content Include="BITMAP\BITMAP_PRINT_SETUP.png" />
+    <Content Include="BITMAP\BITMAP_OPTIONS.png" />
+    <Content Include="BITMAP\BITMAP_VALIDATE.png" />
+    <Content Include="BITMAP\BITMAP_PUBLISH.png" />
+    <Content Include="XML\ISO.xsl" />
+    <None Include="app.config" />
+    <None Include="_HISTORY.txt" />
+    <None Include="_TODO.txt" />
+    <Content Include="BITMAP\BITMAP_ESRI_LOGO.png" />
+    <Content Include="BITMAP\BITMAP_SCHEMA_REPORT.png" />
+    <Content Include="BITMAP\BITMAP_XML_REPORT.png" />
+    <Content Include="BITMAP\BITMAP_DATA_REPORT.png" />
+    <Content Include="BITMAP\BITMAP_MAIL.png" />
+    <Content Include="BITMAP\BITMAP_METADATA.png" />
+    <Content Include="ICON\DIAGRAMMER.ico" />
+    <Content Include="XML\FILE_DEFAULT.xslt" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ESRI.ArcGIS.Diagrammer\ESRI.ArcGIS.Diagrammer.csproj">
+      <Project>{119c33c2-95fb-4fdc-8ec8-a771ca15cb47}</Project>
+      <Name>ESRI.ArcGIS.Diagrammer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ESRI.ArcGIS.ExceptionHandler\ESRI.ArcGIS.ExceptionHandler.csproj">
+      <Project>{a90038ee-e2de-437d-b545-324c31b30e79}</Project>
+      <Name>ESRI.ArcGIS.ExceptionHandler</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Open.Diagramming\Crainiate.Diagramming.csproj">
+      <Project>{dc0ff857-d4d8-4676-9f59-bda616ebaecc}</Project>
+      <Name>Crainiate.Diagramming</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

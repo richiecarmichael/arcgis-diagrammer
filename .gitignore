@@ -1,0 +1,4 @@
+*.scc
+!/Divelements/SandBar.dll
+!/Divelements/SandDock.dll
+!/MSXML/Interop.MSXML.dll

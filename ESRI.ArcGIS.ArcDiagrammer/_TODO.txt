@@ -1,0 +1,322 @@
+﻿TODO
+====
+
+From Philip Campman (5/1/2008):
+- Would abstract field lists be possible? It is not uncommon in complicated models to have a set of attributes that are common across each feature class. Having an abstract which you could link to with an arrow before linking to the Feature Dataset would let you define these common attributes a single time and then link all of your feature classes to it. I can give you an example of how I do this in Visio if you would like. 
+- Options to show more details about field definition next to the field name in the diagram. For example, when designing with Visio, it will display the domain in use. When I design in Visio I also put a text box next to each attribute which lists whether the field allows null values, what type of field it is (string, integer, etc.) and what the field definition is (precision, scale, etc.) 
+- The window sizing is very quirky. Some of the models I deal with are very complex with large lists of attributes and domains. Sometimes when expanding a feature class, there is not enough room on the display to show it all even if you zoom to 75% or 50%. 
+- Allow the user to scroll up and down within an expanded feature class fields using the arrow keys. 
+- Definition of spatial extent doesn't work as expected. I have found that to get the spatial extent for a Feature Dataset created correctly I need to create a dummy Feature Dataset containing a dummy feature class in SDE, reverse engineer it and then copy and past the Feature Dataset into the diagram that I am creating. 
+Thanks and keep up the great work!!! 
+
+From JD. 10/19/2007:
+"I have been making changes to our data model through your diagrammer for about a week now.
+I have noticed every now and then when I make a field (IsNullable = False) the changes are
+not ported out through the XML into the Geodatabase.  I am not sure what is causing this.
+The change will show in the diagrammer, but not the XML.  I go back and resave without making
+changes and the change will now be in the XML."
+
+For MS. 11/29/2007:
+1) Tools > Create Domain from Existing Field
+When clicked a dialog will appear allowing you to select an existing table/featureclass and field.
+When OK is clicked on the dialog then a new domain will be added to the diagram.  This diagram can
+then be saved as XML and imported into any geodatabase.
+2) Tools > Data Report
+This data report currently displays row/feature counts per featureclass and subtype. The report
+could be extended to report min/max of fields too?
+
+12/6/2007
+Need to add relationship error checking.
+
+Add the following settings to the options dialog:
+1) Default Width for new Tables (collapsed or expanded)
+2) Default Collapsed Height for new tables.
+ 
+Add Graphic/Drawing capabilities
+
+When you create a new feature dataset the focus should go to the entity so you can started editing its properties right away.
+The ability to delete using the delete key on the keyboard.
+The ability to add some description information about tables and fields and have that information displayed in the documentation.
+
+From SG. 8/28/2007. See _SeanGrant.pdf
+1.	Add a zoom in and zoom out magnifying glass to the Standard toolbar. (if you could use the same zoom in/zoom out function with the mouse wheel the way that ArcMap behaves that would be nice)
+2.	Add a pan “hand” to the Standard toolbar (if you could use the same panning function with the mouse wheel by depressing it the way that ArcMap behaves that would be nice)
+3.	Add a rectangle to the Overview window showing the current extent that is being viewed
+4.	Right-click on the feature class/table and have a context menu that says “Show Relationships” that would open a new tab with that feature class/table and all the relationships it participates in and the corresponding feature class/table that it participates with.(See below image…example if I right-clicked on the ADHP feature class)
+5.	A way to collapse the subtypes so if you didn’t want to show them you can. Same way you show the fields
+6.	When in the different layouts can the domains be organized with similar domain types? For example..see below 
+7.	A new layout option called “Catalog” that organizes the objects like the tree view in ArcCatalog
+8.	Have Annotation, Dimensions, and Multipatch able to be set to different colors 
+9.	Change the description from “Feature class” to “Polygon Feature class”, “Annotation Feature Class”….etc…
+10.	Would it be possible to be able to add comments to feature classes/fields that will show up in the Schema Report? Comments that a user could enter in to give a description of something?
+
+From MJ. 7/26/2007
+I thought of a couple of other ‘nice to have’ enhancements:
+•	In the topology rules diagram, when you draw a link to create a rule, it would be nice if the link was selected so you could just go directly to the properties pane and edit it.
+•	In the ArcCatalog GUI when setting up topology rules, the available rule types combobox changes depending on what the source & destination feature classes for the rule are. It would be nice if ArcGIS Diagrammer did something similar.
+Below I’ve got some additional notes on ArcGIS Diagrammer:
+•       As mentioned in a previous email, I get errors when I try to point the validator at a personal or sde geodatabase.
+•       It would be really nice to be able to re-order fields. Maybe it is possible to do this but I haven’t been able to figure out how. I’ve just been opening the xml in a text editor and re-ordering the fields manually – tedious.
+•       When creating topology rules, I can pick feature classes that do not participate in the topology. I don’t think you should be able to do that.
+•       Sizing objects is a little tricky. I can provide more detail on this if you’re interested.
+•       I understand that we are editing the xml directly and it knows nothing about the layout. But a nice to have feature would be for it to save the layout (I also understand I can export the layout to an image file).
+
+From MD. 7/25/2007
+Nevertheless it has some issues that I think should be fixed or the program can be enhanced:
+- Copy Paste
+      Not working in the Properies window (e.g. you want to copy the Name to AliasName)
+      Can not copy an field. (If you have lot of field in a table with same setting you need to set them again and again)
+- Cannot remove empty index
+- When a Field selected in the Table element the context menu item "Add Index" should create a new index for the selected Field, so you do not need to type it again and add the index field manualy.
+- The table element can not be heigher than 350 px.
+
+From SG. 1/3/2007
+2.	No Find tool or other way to navigate to individual classes/text 
+
+From AV. 12/13/2007
+A suggestion for future releases....when generating a schema report, assign the report name to be the name of the xml file rather than simply "ArcGIS Diagrammer".
+
+From DH
+2) Importing a xml workspace document into an existing diagram.
+This would be a very useful feature!
+ 
+From Philip Penn
+- Add new menu item to table and feature class context menus to add a new subype.
+
+From Nuno Gil & Tracy Thorleifson
+- Add abstract classes to host collections of fields.
+
+From Philip Penn
+- Make pasted elements appear close to parent (if any) or center of screen.
+  (see ~1300 of FormDiagrammer.cs)
+
+From Philip Penn
+- Add validation for relationships and relationship rules.
+
+For Mike Sweeney
+Tools > Create Domain from Existing Field
+When clicked a dialog will appear allowing you to select an existing table/featureclass and field.  When OK is clicked on the dialog then a new domain will be added to the diagram.  This diagram can then be saved as XML and imported into any geodatabase.
+
+Tools > Data Report
+This data report currently displays row/feature counts per featureclass and subtype. The report could be extended to report min/max of fields too?
+
+******************************************************************
+
+Subject ArcGIS Diagrammer  
+Author Jonathan DeRose  
+Date Mar 12, 2008  
+Message Is it possible to save a read-only instance of ArcGIS Diagrammer 9.2 v1.0? I realize there are other methods outside of the application to protect the files but wanted to know if it was possible within this app. Thanks in advance.  
+  Jonathan DeRose 
+GIS Analyst 
+Charlotte-Mecklenburg Utilities  
+    
+• Top Print Reply Bookmark Message View Bookmarks Edit   Alert Moderator    
+Subject Re: ArcGIS Diagrammer  
+Author Richie Carmichael  
+Date Mar 13, 2008  
+Message Hi Jonathan, 
+
+ArcGIS Diagrammer currently does not support encryption or restricted permissions like Microsoft Word or PDF. 
+
+As you suggest there are workarounds like setting operating system permissions on a file. 
+
+Password encryption would be fairly easy to implement. Is this something that you would want? This would allow the file to be portable but a recipient would need to enter a password to open the file. 
+
+Richie 
+  
+******************************************************************
+
+I've recently run into a minor issue: When creating an index on a GUID field, 
+the published XML document cannot be imported into a file geodatabase (9.2 SP6). 
+Apparently this is due to the contents of the field's <length> element which is 0 
+by default in the Diagrammer. Although the length of a GUID field is implied and 
+varies by DBMS, the FGDB import fails if it is 0. Other values work well. ArcCatalog 
+seems to set the length to 38, regardless of which DBMS...
+
+******************************************************************
+
+Two issues however: 
+1. Creating topology rules inside it inevitably leads to unsuccessful imports to the GDB. Also, validating topology classes made in AC brings about error msgs, type "{Origin, Destination} Feature Class and/or subtype does not exist". Any hints?
+
+2. Subtyped feature classes: Frequent warnings, "The default values and domain for the subtype field <FIELD> are identical to those in the parent objectclass". Applies to all subtypes of specific feature classes. This is a bit confusing, given that the subtype field value for a subtype should follow the setup in AC, feature class -> Properties -> Subtypes tab table.
+
+Any hints?
+
+User guide:
+1. Finish it.
+2. A topology creation example would be nice.
+
+******************************************************************
+
+Whne you try to configure the layout (at least in my case) in Tools>Options, IF you click OK all of your elements Will return to base color defined in that schema.
+
+And a Nice addition, that is purely aesthetical, is that when you change the color of a feature class, the software could for instance, change the colors of all "gradient" elements for column names, indexes etc.
+
+******************************************************************
+
+I have a couple of feature requests:
+
+1. Please provide the ability to display the following in each object where applicable:
+  a. Data type
+  b. Allow nulls ( Yes / No )
+  c. Default value
+  d. Length
+  e. Primary and foreign keys
+2. Please provide the ability to display the relationship between primary and foreign keys, including the cardinality of the relationship.
+
+******************************************************************
+
+A usability idea for you. When the user right clicks on a class it would be great if the 'Field Editor' could be launched,
+ideally using its previous dialog size. Alternatively, the Object Class properties could be displayed at of the properties
+display. At the moment theres a lot of scrolling and searching.
+
+******************************************************************
+
+Subject Enhancement "wish list" for ArcGIS Diagrammer  
+Author Sean Grant  
+Date Oct 07, 2009  
+Message 1. Have Zoom tools (In,Out,Full Extent, Pan) on a toolbar 
+2. Have ability to organize layout based on object type (i.e..feature class at top, domains at bottom …etc) 
+3. Have Overview window updated better with the main window 
+4. Have ability to select multiple objects of the same type and change their properties (i.e..select all feature classes and make them Z-enabled) 
+5. Improve organization of Properties window for features: 
+Have "Basic" and "Advanced" properties of the object. The Basic would have all the same information you would fill out as you would if you were to create that same object in ArcCatalog. 
+
+These are just some of what I have found that would make the experience a little better. 
+
+This is a great tool and I wish it was fully supported since the CASE tools are going away 
+
+-Sean 
+ 
+******************************************************************
+
+Add support for Raster Datasets and Raster Catalogs in the HTML schema report.
+
+******************************************************************
+
+I'll just throw my 2 cents in here as well. 
+The one major thing that Diagrammer and XML Schema Import lack is the ability to apply updates to a database. We currently use Visio UML to maintain our models and use it as the basis of our GDB. When we add a column we add it to the model and re-run it. This allows us to apply the same model to DEV/TEST/PROD. 
+Using Diagrammer and XML Import we can't apply just the changes. It will recreate all existing objects with a "1" as a suffix. With relationship classes linking a lot of our data this pretty much means wiping out the database and re-applying the model which is a non-starter, or a lot of manual messing around after to get rid of the "*1" objects. 
+Adding an "apply changes only" option to XML Schema Import would be make the Diagrammer a feasible replacement for Visio for us. 
+
+******************************************************************
+
+•     Change Order of Fields in existing feature classes:  The ability to change the order of fields, moving them up or down would provide a much easier way of modifying existing feature classes without having to go into ArcCatalog to make changes.  Furthermore, there would be less opportunity for the model as created in ArcGIS Diagrammer to become out of sync with what has been put in production and create greater integrity of a Diagrammer Model repository.
+•     Inheritance:  The ability to pass down common attributes, such as ObjectID or system fields from one feature class to another would be useful and result in less redundancy when developing the model.
+•     Being able to re-import the XML schema, on data that already exists:  Allowing for schema mapping and to apply changes to the model that you’ve made.
+
+******************************************************************
+
+1. To have something similar to "Abstract Class" - where we can define some basic attributes and behaviours, and inherit them. e.g. I have a "ArchiveObject" carries a set of attributes such as CreatedBy, CreatedDate, ModifiedBy, ModifiedDate, which will be inherited by all the objects to be created subsequently. 
+
+2. Better Diagram - Ability to present RelationhipClass and its connecting lines in the Diagram. Not just put them aside. 
+
+3. Better Diagram - Alternative to SubStype presentation while in Hierarchical Layout Mode - e.g. ability to Collapse/Expand all Subtypes (to make an overview diagram). 
+
+These may be difficult to do, but would be very good to have and make ArcGIS Diagrammer a very good data model presentation tool. 
+
+******************************************************************
+
+I agree with all the comments, specially with the one suggesting the ability to apply updates to a database. 
+
+In addition to all these suggestions, here are others: 
+
+1. One really helpful thing would be the ability to import some properties between objects in the diagram. For example, The dataframe Spatial Reference or Extent are composed for various properties; if I have 10 dataframes with the same Extent and Spatial Reference, I have to set each propertie for each dataset and it takes a lot of time... 
+
+2. We all know that a Feature class inherits the Extent and Spatial Reference from the dataset that contains it. In ArcGIS Diagrammer it doesn't happen, I have to define for each Dataset, the Extent, the Spatial reference of the Extent, the Spatial Reference for the dataframe (Dataset Spatial Reference Properties.JPG) and for each feature class in any dataframe, I have to define the same (Feature Class Spatial Reference Properties.JPG), plus the GeometryDef in the Shape field (Shape field Spatial Reference Properties.JPG). I really don't understand why so many places to define the same thing. 
+
+My suggestion is to simplify this in two ways. First, only have one place in each element to define te Spatial Reference Properties. Second, when you create a Feature Class and link it to a DataFrame, make the Extent and the Spatial Reference of this feature class equal to the dataframe ones. 
+
+2. I think it would be helpful if we can add some graphics to the diagram, I mean, circles, rectangles, lines, arrows, text and so on. 
+
+3. Another interesting thing in the diagram would be the ability to see the geometry of the feature class elements, like a graphic or text beside the "Feature Class" text, indicating it is a polygon or a polyline or a point. 
+
+I'll let you know if something else come up 
+
+******************************************************************
+
+First off, let me say I love ArcGIS Diagrammer!! Its been very helpful while we have been organizing tons of shapefiles and moving on SDE for maintenance. 
+
+There are a few enhancements that would make the tool work better for both our simple schema's and our very complex ones. 
+
+-Abstract Class equivilant. We have lots of fields that are the same across all our feature classes. I have one schema with over 20 feature classes with similar fields. Being able to update field properties in one place would make maintaining these a lot easier. 
+
+-Ability to display field properties on the feature class graphic itself. This helps when printing out the schema for users or discussion at meetings. The things I'd like to be able to display are: 
+- Field type (string, long integer, etc) 
+- Field length, precision, scale 
+- Domain associated with field 
+
+-Graphically show links to objects for relationship classes. Preferably a line that starts on the origin feature class graphic at he field name that is the Origin Key, and then the line would end on the destination object on the field that is the Foreign Key. A graphic display of the relationship type (ex. 1:M, Compostite, Simple) would also be very helpful. 
+
+-Being able to auto expand and organize feature classes, tables, relationship classes, and domains on a set page size (ex. 11x17) 
+
+Thanks so much for taking input from the users!! 
+
+******************************************************************
+
+ 1. In addition to the field name display:
+    a. Field Type
+    b. Field Length (if applicable)
+    c. Field Required
+    d. Field Nullable
+ 2. Display Crow's feet for foreign key relationships
+ 3. Add support for Raster Mosaic Datasets (new in 9.4).
+ 
+******************************************************************
+
+For the schema report, it would be nice to enable grid lines, or at least horizontal lines
+separating each object class.  If no color printer is available, it all blends together.
+
+This may be fixed in 9.2, but I had trouble installing it so am using 9.1.
+
+******************************************************************
+
+- need print margins on layout
+- can't move items beyond limited extent
+- handles are difficult to grab
+- auto layout need better organization
+- needs auto expand for all items; and a fit to page
+- needs align tools
+
+******************************************************************
+
+I am using the Arc GIS diagrammer and I was wondering if there is a way to change the default projection from WGS
+to a State Plane system.
+I am creating several models and every time I have to reset the projection.
+Thank you for creating a great program like the diagramer.
+
+******************************************************************
+
+I would like to post some feedback about your program ArcGIS Diagrammer.
+I am using version 1.0.3567.18822
+
+Some inconviniances during use:
+1. I tried to use zooming by Ctrl+Mouse wheel - it's not working
+2. After some time of editing (creating domains) I realised that I can't copy (Ctrl+C, Ctrl+V) that domain (as a whole).
+I had to restart program and then it began to work.
+
+******************************************************************
+
+My model was failing to import to a File GDB in ArcCatalog, saying
+"The relationship class is incompatible with an existing relationship
+class"...without telling me which relationship class it was failing
+on.  Some digging through the old forums turned up a post from Craig
+Gilgrass stating that this message indicates an object is
+participating in >1 composite relationship class, which is not
+allowed.  Fair enough, but I have roughly 130 relationship classes in
+this model.  I poked around for a while, and couldn't find the
+culprit.  So I was then reduced to chopping up my model and trying to
+import in chunks to determine where the problem was.  I eventually
+narrowed it down enough and found it - it was in fact an errantly
+defined relationship class, an honest mistake that I had made - but it
+took a couple of days to track it down.
+
+===========================================================================================
+
+Richie,
+
+No problem… With the old release, I found listing the feature classes and relevant field names that associated with a domain very useful. 
+It will be great, if you get time and if you think you can put this functionality back to 10 version..
+
+Thanks,
+Guru

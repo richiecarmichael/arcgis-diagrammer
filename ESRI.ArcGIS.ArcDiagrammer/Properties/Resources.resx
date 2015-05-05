@@ -1,0 +1,863 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="BITMAP_CLOSE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_close.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_COPY" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_copy.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_CUT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_cut.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_DATA_REPORT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_data_report.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_DELETE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_delete.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_ERROR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_error.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_ESRI" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_esri.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_EXPORT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_export.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_HELP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_help.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_LAYOUT_CIRCULAR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_layout_circular.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_LAYOUT_FORCEDDIRECT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_layout_forceddirect.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_LAYOUT_HIERACHICAL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_layout_hierachical.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_LAYOUT_ORTHOGONAL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_layout_orthogonal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_LAYOUT_TREE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_layout_tree.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_MESSAGES" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_messages.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_METADATA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_metadata.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_MODE_LINK" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_mode_link.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_MODE_NORMAL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_mode_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_NEW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_new.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_OK" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_ok.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_OPEN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_open.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_OPTIONS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_options.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_PASTE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_paste.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_PRINT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_print.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_PRINT_PREVIEW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_print_preview.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_PRINT_SETUP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_print_setup.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_PUBLISH" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_publish.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_REDO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_redo.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_SAVE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_save.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_SAVEAS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_saveas.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_SCHEMA_REPORT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_schema_report.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_SELECT_ALL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_select_all.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_SPLIT_HORIZONTAL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_split_horizontal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_SPLIT_VERTICAL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_split_vertical.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_UNDO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_undo.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_VALIDATE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_validate.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_WARNING" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_warning.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_ZOOM_IN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_zoom_in.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_ZOOM_OUT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_zoom_out.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_ZOOM_TO_ACTUAL_SIZE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_zoom_to_actual_size.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_ZOOM_TO_SELECTION" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_zoom_to_selection.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_ZOOM_TO_WINDOW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_zoom_to_window.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FILE_DEFAULT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\xml\file_default.xslt;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="TEXT_100_PERCENT_" xml:space="preserve">
+    <value>&amp;100%</value>
+  </data>
+  <data name="TEXT_200_PERCENT_" xml:space="preserve">
+    <value>&amp;200%</value>
+  </data>
+  <data name="TEXT_25_PERCENT_" xml:space="preserve">
+    <value>25%</value>
+  </data>
+  <data name="TEXT_300_PERCENT_" xml:space="preserve">
+    <value>&amp;300%</value>
+  </data>
+  <data name="TEXT_50_PERCENT_" xml:space="preserve">
+    <value>&amp;50%</value>
+  </data>
+  <data name="TEXT_75_PERCENT_" xml:space="preserve">
+    <value>&amp;75%</value>
+  </data>
+  <data name="TEXT_ABOUT_ARCDIAGRAMMER" xml:space="preserve">
+    <value>About ArcGIS Diagrammer</value>
+  </data>
+  <data name="TEXT_ABOUT_ARCDIAGRAMMER_" xml:space="preserve">
+    <value>&amp;About ArcGIS Diagrammer</value>
+  </data>
+  <data name="TEXT_ACTIVATE" xml:space="preserve">
+    <value>Activate</value>
+  </data>
+  <data name="TEXT_ALL_DIAGRAMMER_DOCUMENTS" xml:space="preserve">
+    <value>All Diagrammer Documents</value>
+  </data>
+  <data name="TEXT_ALL_FILES" xml:space="preserve">
+    <value>All Files</value>
+  </data>
+  <data name="TEXT_APPLY" xml:space="preserve">
+    <value>Apply</value>
+  </data>
+  <data name="TEXT_ARCDIAGRAMMER" xml:space="preserve">
+    <value>ArcGIS Diagrammer</value>
+  </data>
+  <data name="TEXT_ARCGIS_DIAGRAMMER_USERGUIDE_" xml:space="preserve">
+    <value>ArcGIS Diagrammer &amp;User Guide</value>
+  </data>
+  <data name="TEXT_ARCGIS_DIAGRAMMER_DOCUMENT" xml:space="preserve">
+    <value>Diagrammer Documents</value>
+  </data>
+  <data name="TEXT_ATTRIBUTION_STATEMENT" xml:space="preserve">
+    <value>Portions of this work are:|Copyright © 2008 Divelements Limited. All rights reserved.|Copyright © 2008 Crainiate Software. All rights reserved.</value>
+  </data>
+  <data name="TEXT_AUTO_HIDE_ALL_" xml:space="preserve">
+    <value>A&amp;uto Hide All</value>
+  </data>
+  <data name="TEXT_CANCEL" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="TEXT_CATALOG" xml:space="preserve">
+    <value>Catalog</value>
+  </data>
+  <data name="TEXT_CATALOG_" xml:space="preserve">
+    <value>&amp;Catalog</value>
+  </data>
+  <data name="TEXT_CIRCULAR" xml:space="preserve">
+    <value>Circular</value>
+  </data>
+  <data name="TEXT_CIRCULAR_" xml:space="preserve">
+    <value>&amp;Circular</value>
+  </data>
+  <data name="TEXT_CLOSE" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="TEXT_CLOSE_" xml:space="preserve">
+    <value>&amp;Close</value>
+  </data>
+  <data name="TEXT_CLOSE_ALL_DOCUMENTS_" xml:space="preserve">
+    <value>Close &amp;All Documents</value>
+  </data>
+  <data name="TEXT_CLOSE_WITHOUT_SAVING" xml:space="preserve">
+    <value>Do you want to close the current diagram without saving?</value>
+  </data>
+  <data name="TEXT_COMMANDS" xml:space="preserve">
+    <value>Commands</value>
+  </data>
+  <data name="TEXT_CONTACT_AUTHOR" xml:space="preserve">
+    <value>Contact Author</value>
+  </data>
+  <data name="TEXT_COPY_" xml:space="preserve">
+    <value>&amp;Copy</value>
+  </data>
+  <data name="TEXT_COPYRIGHT_STATEMENT" xml:space="preserve">
+    <value>Copyright © 2008 ESRI Inc. All rights reserved.</value>
+  </data>
+  <data name="TEXT_CUT_" xml:space="preserve">
+    <value>C&amp;ut</value>
+  </data>
+  <data name="TEXT_DATA" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="TEXT_DATA_REPORT" xml:space="preserve">
+    <value>Data Report</value>
+  </data>
+  <data name="TEXT_DATA_REPORT_" xml:space="preserve">
+    <value>&amp;Data Report</value>
+  </data>
+  <data name="TEXT_DEFAULT" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="TEXT_DEFAULT_" xml:space="preserve">
+    <value>&amp;Default</value>
+  </data>
+  <data name="TEXT_DELETE_" xml:space="preserve">
+    <value>&amp;Delete</value>
+  </data>
+  <data name="TEXT_DESCRIPTION" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="TEXT_DEVELOPED_BY_STATEMENT" xml:space="preserve">
+    <value>Developed by the Applications Prototype Lab, ESRI Redlands</value>
+  </data>
+  <data name="TEXT_DIAGRAM" xml:space="preserve">
+    <value>Diagram</value>
+  </data>
+  <data name="TEXT_DIAGRAM_COLORS" xml:space="preserve">
+    <value>Diagram Colors</value>
+  </data>
+  <data name="TEXT_DISCUSSION_FORUM_" xml:space="preserve">
+    <value>&amp;Discussion Forum</value>
+  </data>
+  <data name="TEXT_DOCKABLE_" xml:space="preserve">
+    <value>Doc&amp;kable</value>
+  </data>
+  <data name="TEXT_DOMAIN" xml:space="preserve">
+    <value>Domain</value>
+  </data>
+  <data name="TEXT_DOMAIN_VIEW_" xml:space="preserve">
+    <value>&amp;Domain View</value>
+  </data>
+  <data name="TEXT_EDIT_" xml:space="preserve">
+    <value>&amp;Edit</value>
+  </data>
+  <data name="TEXT_EMPTY" xml:space="preserve">
+    <value>Empty</value>
+  </data>
+  <data name="TEXT_ERROR_LIST" xml:space="preserve">
+    <value>Error List</value>
+  </data>
+  <data name="TEXT_ERROR_LIST_" xml:space="preserve">
+    <value>&amp;Error List</value>
+  </data>
+  <data name="TEXT_ESRI_HOME_" xml:space="preserve">
+    <value>ESRI &amp;Home</value>
+  </data>
+  <data name="TEXT_ARCGIS_IDEAS_" xml:space="preserve">
+    <value>&amp;ArcGIS Ideas</value>
+  </data>
+  <data name="TEXT_EXCEPTIONS_" xml:space="preserve">
+    <value>&amp;Exceptions</value>
+  </data>
+  <data name="TEXT_EXIT_" xml:space="preserve">
+    <value>E&amp;xit</value>
+  </data>
+  <data name="TEXT_EXPORT_" xml:space="preserve">
+    <value>&amp;Export...</value>
+  </data>
+  <data name="TEXT_FEATURE_CLASS" xml:space="preserve">
+    <value>Feature Class</value>
+  </data>
+  <data name="TEXT_FILE_" xml:space="preserve">
+    <value>&amp;File</value>
+  </data>
+  <data name="TEXT_FILE_GEODATABASE_" xml:space="preserve">
+    <value>&amp;File Geodatabase</value>
+  </data>
+  <data name="TEXT_FLOATING_" xml:space="preserve">
+    <value>&amp;Floating</value>
+  </data>
+  <data name="TEXT_FORCED_DIRECT" xml:space="preserve">
+    <value>Forced Direct</value>
+  </data>
+  <data name="TEXT_FORCED_DIRECT_" xml:space="preserve">
+    <value>&amp;Forced Direct</value>
+  </data>
+  <data name="TEXT_FULL" xml:space="preserve">
+    <value>Full</value>
+  </data>
+  <data name="TEXT_FULL_" xml:space="preserve">
+    <value>&amp;Full</value>
+  </data>
+  <data name="TEXT_GEODATABASE_OBJECTS" xml:space="preserve">
+    <value>Geodatabase Objects</value>
+  </data>
+  <data name="TEXT_HELP_" xml:space="preserve">
+    <value>&amp;Help</value>
+  </data>
+  <data name="TEXT_HIDE_" xml:space="preserve">
+    <value>&amp;Hide</value>
+  </data>
+  <data name="TEXT_HIERARCHICAL" xml:space="preserve">
+    <value>Hierarchical</value>
+  </data>
+  <data name="TEXT_HIERARCHICAL_" xml:space="preserve">
+    <value>&amp;Hierarchical</value>
+  </data>
+  <data name="TEXT_HISTORY_" xml:space="preserve">
+    <value>Hi&amp;story</value>
+  </data>
+  <data name="TEXT_TUTORIALS_" xml:space="preserve">
+    <value>&amp;Tutorials</value>
+  </data>
+  <data name="TEXT_INTERACTIVE_MODE" xml:space="preserve">
+    <value>Interactive Mode</value>
+  </data>
+  <data name="TEXT_INTERACTIVE_MODE_" xml:space="preserve">
+    <value>&amp;Interactive Mode</value>
+  </data>
+  <data name="TEXT_LAYOUT" xml:space="preserve">
+    <value>Layout</value>
+  </data>
+  <data name="TEXT_LAYOUT_" xml:space="preserve">
+    <value>&amp;Layout</value>
+  </data>
+  <data name="TEXT_LINK_MODE_" xml:space="preserve">
+    <value>&amp;Link Mode</value>
+  </data>
+  <data name="TEXT_MAIN_MENU" xml:space="preserve">
+    <value>Main Menu</value>
+  </data>
+  <data name="TEXT_MESSAGES" xml:space="preserve">
+    <value>Messages</value>
+  </data>
+  <data name="TEXT_MESSAGES_" xml:space="preserve">
+    <value>{0} Messages</value>
+  </data>
+  <data name="TEXT_METADATA" xml:space="preserve">
+    <value>Metadata</value>
+  </data>
+  <data name="TEXT_METADATA_" xml:space="preserve">
+    <value>&amp;Metadata</value>
+  </data>
+  <data name="TEXT_NAME" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="TEXT_NAVIGATION" xml:space="preserve">
+    <value>Navigation</value>
+  </data>
+  <data name="TEXT_NAVIGATION_" xml:space="preserve">
+    <value>&amp;Navigation</value>
+  </data>
+  <data name="TEXT_NEW_" xml:space="preserve">
+    <value>&amp;New</value>
+  </data>
+  <data name="TEXT_NEW_HORIZONTAL_TAB_GROUP_" xml:space="preserve">
+    <value>New Hori&amp;zontal Tab Group</value>
+  </data>
+  <data name="TEXT_NEW_VERTICAL_TAB_GROUP_" xml:space="preserve">
+    <value>New &amp;Vertical Tab Group</value>
+  </data>
+  <data name="TEXT_NONE_BR" xml:space="preserve">
+    <value>(None)</value>
+  </data>
+  <data name="TEXT_NORMAL_MODE_" xml:space="preserve">
+    <value>&amp;Normal Mode</value>
+  </data>
+  <data name="TEXT_NOT_AVAILABLE_BR" xml:space="preserve">
+    <value>(Not Available)</value>
+  </data>
+  <data name="TEXT_OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="TEXT_OPEN_" xml:space="preserve">
+    <value>&amp;Open...</value>
+  </data>
+  <data name="TEXT_OPEN_XML_WORKSPACE_DOCUMENT" xml:space="preserve">
+    <value>Open XML Workspace Document</value>
+  </data>
+  <data name="TEXT_OPTIONS" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="TEXT_OPTIONS_" xml:space="preserve">
+    <value>&amp;Options...</value>
+  </data>
+  <data name="TEXT_ORTHOGONAL" xml:space="preserve">
+    <value>Orthogonal</value>
+  </data>
+  <data name="TEXT_ORTHOGONAL_" xml:space="preserve">
+    <value>&amp;Orthogonal</value>
+  </data>
+  <data name="TEXT_OVERVIEW" xml:space="preserve">
+    <value>Overview</value>
+  </data>
+  <data name="TEXT_OVERVIEW_" xml:space="preserve">
+    <value>&amp;Overview</value>
+  </data>
+  <data name="TEXT_PAGE_" xml:space="preserve">
+    <value>&amp;Page</value>
+  </data>
+  <data name="TEXT_PALETTE" xml:space="preserve">
+    <value>Palette</value>
+  </data>
+  <data name="TEXT_PALETTE_" xml:space="preserve">
+    <value>&amp;Palette</value>
+  </data>
+  <data name="TEXT_PASTE_" xml:space="preserve">
+    <value>&amp;Paste</value>
+  </data>
+  <data name="TEXT_PATH" xml:space="preserve">
+    <value>Path</value>
+  </data>
+  <data name="TEXT_PERSONAL_GEODATABASE_" xml:space="preserve">
+    <value>&amp;Personal Geodatabase</value>
+  </data>
+  <data name="TEXT_PRINT_" xml:space="preserve">
+    <value>&amp;Print...</value>
+  </data>
+  <data name="TEXT_PRINT_PREVIEW_" xml:space="preserve">
+    <value>Print Pre&amp;view...</value>
+  </data>
+  <data name="TEXT_PRINT_SETUP_" xml:space="preserve">
+    <value>Print Set&amp;up...</value>
+  </data>
+  <data name="TEXT_PROPERTIES" xml:space="preserve">
+    <value>Properties</value>
+  </data>
+  <data name="TEXT_PROPERTIES_" xml:space="preserve">
+    <value>P&amp;roperties</value>
+  </data>
+  <data name="TEXT_PUBLISH_" xml:space="preserve">
+    <value>P&amp;ublish...</value>
+  </data>
+  <data name="TEXT_READY" xml:space="preserve">
+    <value>Ready</value>
+  </data>
+  <data name="TEXT_REDO_" xml:space="preserve">
+    <value>&amp;Redo</value>
+  </data>
+  <data name="TEXT_RENDERER_" xml:space="preserve">
+    <value>&amp;Renderer</value>
+  </data>
+  <data name="TEXT_REPORT" xml:space="preserve">
+    <value>Report</value>
+  </data>
+  <data name="TEXT_REPORTER_" xml:space="preserve">
+    <value>&amp;Validate</value>
+  </data>
+  <data name="TEXT_RESET" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="TEXT_RESET_" xml:space="preserve">
+    <value>&amp;Reset</value>
+  </data>
+  <data name="TEXT_RESET_ALL" xml:space="preserve">
+    <value>Reset All</value>
+  </data>
+  <data name="TEXT_RESET_ALL_TABS" xml:space="preserve">
+    <value>Resets All Tabs</value>
+  </data>
+  <data name="TEXT_RESET_ALL_TABS_WARNING" xml:space="preserve">
+    <value>Do you really want to reset all tabs?</value>
+  </data>
+  <data name="TEXT_RESET_CURRENT_TAB" xml:space="preserve">
+    <value>Resets Current Tab</value>
+  </data>
+  <data name="TEXT_RESET_CURRENT_TAB_WARNING" xml:space="preserve">
+    <value>Do you really want to reset the current tab?</value>
+  </data>
+  <data name="TEXT_RESTORE_TAB_GROUP_" xml:space="preserve">
+    <value>&amp;Restore Tab Group</value>
+  </data>
+  <data name="TEXT_SAVE" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="TEXT_SAVE_" xml:space="preserve">
+    <value>&amp;Save {0}</value>
+  </data>
+  <data name="TEXT_SAVE_AS_" xml:space="preserve">
+    <value>Save {0} &amp;As...</value>
+  </data>
+  <data name="TEXT_SAVE_XML_WORKSPACE_DOCUMENT" xml:space="preserve">
+    <value>Save XML Workspace Document</value>
+  </data>
+  <data name="TEXT_SCHEMA" xml:space="preserve">
+    <value>Schema</value>
+  </data>
+  <data name="TEXT_SCHEMA_REPORT" xml:space="preserve">
+    <value>Schema Report</value>
+  </data>
+  <data name="TEXT_SCHEMA_REPORT_" xml:space="preserve">
+    <value>&amp;Schema Report</value>
+  </data>
+  <data name="TEXT_SDE_CONNECTION_" xml:space="preserve">
+    <value>&amp;SDE Connection</value>
+  </data>
+  <data name="TEXT_SELECT_" xml:space="preserve">
+    <value>S&amp;elect...</value>
+  </data>
+  <data name="TEXT_SELECTALL_" xml:space="preserve">
+    <value>&amp;Select All</value>
+  </data>
+  <data name="TEXT_SEND_FEEDBACK_" xml:space="preserve">
+    <value>Send &amp;Feedback</value>
+  </data>
+  <data name="TEXT_STANDARD" xml:space="preserve">
+    <value>Standard</value>
+  </data>
+  <data name="TEXT_STANDARD_" xml:space="preserve">
+    <value>&amp;Standard</value>
+  </data>
+  <data name="TEXT_STATUSBAR_" xml:space="preserve">
+    <value>&amp;Status Bar</value>
+  </data>
+  <data name="TEXT_TABWINDOWS_" xml:space="preserve">
+    <value>&amp;Windows...</value>
+  </data>
+  <data name="TEXT_TEMPLATES" xml:space="preserve">
+    <value>Templates</value>
+  </data>
+  <data name="TEXT_TOOLBARS_" xml:space="preserve">
+    <value>&amp;Toolbars</value>
+  </data>
+  <data name="TEXT_TOOLS_" xml:space="preserve">
+    <value>&amp;Tools</value>
+  </data>
+  <data name="TEXT_TREE" xml:space="preserve">
+    <value>Tree</value>
+  </data>
+  <data name="TEXT_TREE_" xml:space="preserve">
+    <value>&amp;Tree</value>
+  </data>
+  <data name="TEXT_TYPE" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="TEXT_UNDO_" xml:space="preserve">
+    <value>&amp;Undo</value>
+  </data>
+  <data name="TEXT_URL_DISCUSSION" xml:space="preserve">
+    <value>http://forums.arcgis.com/forums/60-Data-Models</value>
+  </data>
+  <data name="TEXT_URL_ESRI_HOME" xml:space="preserve">
+    <value>http://www.esri.com</value>
+  </data>
+  <data name="TEXT_URL_ARCGIS_IDEAS" xml:space="preserve">
+    <value>http://ideas.arcgis.com</value>
+  </data>
+  <data name="TEXT_URL_FEEDBACK" xml:space="preserve">
+    <value>http://arcscripts.esri.com/ContactAuthor.asp?dbid=15166</value>
+  </data>
+  <data name="TEXT_URL_HISTORY" xml:space="preserve">
+    <value>http://maps.esri.com/diagrammer/history.txt</value>
+  </data>
+  <data name="TEXT_URL_USERGUIDE" xml:space="preserve">
+    <value>http://maps.esri.com/diagrammer/userguide.pdf</value>
+  </data>
+  <data name="TEXT_VERSION" xml:space="preserve">
+    <value>Version</value>
+  </data>
+  <data name="TEXT_VIEW_" xml:space="preserve">
+    <value>&amp;View</value>
+  </data>
+  <data name="TEXT_WARNING_STATEMENT" xml:space="preserve">
+    <value>This work is protected by copyright law and international treaties. |Unauthorized reproduction or distribution of this program, or any portion of it, |may result in severe civil and criminal penalties, and will be prosecuted to the |maximum extent possible under the law.</value>
+  </data>
+  <data name="TEXT_WIDTH_" xml:space="preserve">
+    <value>&amp;Width</value>
+  </data>
+  <data name="TEXT_WINDOW" xml:space="preserve">
+    <value>Window</value>
+  </data>
+  <data name="TEXT_WINDOW_" xml:space="preserve">
+    <value>&amp;Window</value>
+  </data>
+  <data name="TEXT_WINDOWS" xml:space="preserve">
+    <value>Windows</value>
+  </data>
+  <data name="TEXT_WINDOWS_" xml:space="preserve">
+    <value>&amp;Windows</value>
+  </data>
+  <data name="TEXT_XML_WORKSPACE_DOCUMENT" xml:space="preserve">
+    <value>XML Workspace Documents</value>
+  </data>
+  <data name="TEXT_ZOOM_" xml:space="preserve">
+    <value>&amp;Zoom</value>
+  </data>
+  <data name="TEXT_CREATE_SCHEMA_REPORT_" xml:space="preserve">
+    <value>&amp;Create Schema Report</value>
+  </data>
+  <data name="TEXT_REORDER_FIELDS_" xml:space="preserve">
+    <value>&amp;Reorder Fields</value>
+  </data>
+  <data name="TEXT_URL_CREATE_SCHEMA_REPORT" xml:space="preserve">
+    <value>http://maps.esri.com/diagrammer/createschemareport.htm</value>
+  </data>
+  <data name="TEXT_URL_REORDER_FIELDS" xml:space="preserve">
+    <value>http://maps.esri.com/diagrammer/reorderfields.htm</value>
+  </data>
+  <data name="TEXT_XML" xml:space="preserve">
+    <value>Xml</value>
+  </data>
+  <data name="TEXT_XML_REPORT_" xml:space="preserve">
+    <value>&amp;Xml Report</value>
+  </data>
+  <data name="DIAGRAMMER" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icon\diagrammer.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TEXT_PRINTER_SETUP" xml:space="preserve">
+    <value>Printer Setup</value>
+  </data>
+  <data name="BITMAP_BLACK" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_black.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_BLUE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_blue.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_SILVER" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_silver.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_ALIGN_BOTTOM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_align_bottom.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_ALIGN_CENTER" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_align_center.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_ALIGN_LEFT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_align_left.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_ALIGN_MIDDLE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_align_middle.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_ALIGN_RIGHT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_align_right.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_ALIGN_TOP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_align_top.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TEXT_DEFAUL_BR" xml:space="preserve">
+    <value>(Default)</value>
+  </data>
+  <data name="BITMAP_ESRI_LOGO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_esri_logo.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TEXT_URL_ADDRELATIONSHIP" xml:space="preserve">
+    <value>http://maps.esri.com/diagrammer/createonetomanyrelationship.htm</value>
+  </data>
+  <data name="TEXT_URL_ADDSUBTYPE" xml:space="preserve">
+    <value>http://maps.esri.com/diagrammer/addsubtype.htm</value>
+  </data>
+  <data name="BITMAP_XML_REPORT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_xml_report.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BITMAP_MAIL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmap\bitmap_mail.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TEXT_CREATE_DATA_REPORT_" xml:space="preserve">
+    <value>Create &amp;Data Report</value>
+  </data>
+  <data name="TEXT_URL_CREATE_DATA_REPORT" xml:space="preserve">
+    <value>http://kiwigis.blogspot.com/2009/08/how-to-create-data-report-with-arcgis.html</value>
+  </data>
+  <data name="TEXT_ADD_SUBTYPE" xml:space="preserve">
+    <value>Add Subtype</value>
+  </data>
+  <data name="TEXT_ALIGN_BOTTOM_" xml:space="preserve">
+    <value>Align &amp;Bottom</value>
+  </data>
+  <data name="TEXT_ALIGN_CENTER_" xml:space="preserve">
+    <value>Align &amp;Center</value>
+  </data>
+  <data name="TEXT_ALIGN_LEFT_" xml:space="preserve">
+    <value>Align &amp;Left</value>
+  </data>
+  <data name="TEXT_ALIGN_MIDDLE_" xml:space="preserve">
+    <value>Align &amp;Middle</value>
+  </data>
+  <data name="TEXT_ALIGN_RIGHT_" xml:space="preserve">
+    <value>Align &amp;Right</value>
+  </data>
+  <data name="TEXT_ALIGN_TOP_" xml:space="preserve">
+    <value>Align &amp;Top</value>
+  </data>
+  <data name="TEXT_BLACK_" xml:space="preserve">
+    <value>&amp;Black</value>
+  </data>
+  <data name="TEXT_BLUE_" xml:space="preserve">
+    <value>B&amp;lue</value>
+  </data>
+  <data name="TEXT_COLOR_SCHEME_" xml:space="preserve">
+    <value>&amp;Color Scheme</value>
+  </data>
+  <data name="TEXT_CREATE_ONE_TO_MANY_RELATIONSHIP" xml:space="preserve">
+    <value>Create One to Many Relationship</value>
+  </data>
+  <data name="TEXT_EXPORT_DIAGRAM" xml:space="preserve">
+    <value>Export Diagram</value>
+  </data>
+  <data name="TEXT_SAVE_DIAGRAM" xml:space="preserve">
+    <value>Save Diagram</value>
+  </data>
+  <data name="TEXT_SAVE_DIAGRAM_AS_XML_WORKSPACE_DOCUMENT" xml:space="preserve">
+    <value>Save Diagram as an XML Workspace Document</value>
+  </data>
+  <data name="TEXT_SAVE_DOCUMENT_BEFORE_CLOSING" xml:space="preserve">
+    <value>Do you want to save the diagram before closing?</value>
+  </data>
+  <data name="TEXT_SAVE_DOCUMENT_BEFORE_OPENING" xml:space="preserve">
+    <value>Do you want to save the current diagram before opening?</value>
+  </data>
+  <data name="TEXT_SILVER_" xml:space="preserve">
+    <value>&amp;Silver</value>
+  </data>
+  <data name="TEXT_TYPE_A_QUESTION_FOR_HELP" xml:space="preserve">
+    <value>Type a question for help</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ISO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\xml\iso.xsl;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+</root>

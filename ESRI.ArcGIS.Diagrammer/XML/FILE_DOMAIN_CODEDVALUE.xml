@@ -1,0 +1,23 @@
+<esri:Workspace xmlns:esri='http://www.esri.com/schemas/ArcGIS/9.2' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xs='http://www.w3.org/2001/XMLSchema'>
+  <WorkspaceDefinition xsi:type='esri:WorkspaceDefinition'>
+    <WorkspaceType>esriLocalDatabaseWorkspace</WorkspaceType>
+    <Version></Version>
+    <Domains xsi:type='esri:ArrayOfDomain'>
+      <Domain xsi:type='esri:CodedValueDomain'>
+        <DomainName>Empty</DomainName>
+        <FieldType>esriFieldTypeString</FieldType>
+        <MergePolicy>esriMPTDefaultValue</MergePolicy>
+        <SplitPolicy>esriSPTDefaultValue</SplitPolicy>
+        <Description></Description>
+        <Owner></Owner>
+        <CodedValues xsi:type='esri:ArrayOfCodedValue'>
+          <CodedValue xsi:type='esri:CodedValue'>
+            <Name>Description</Name>
+            <Code xsi:type='xs:string'>Code</Code>
+          </CodedValue>
+        </CodedValues>
+      </Domain>
+    </Domains>
+  </WorkspaceDefinition>
+  <WorkspaceData xsi:type='esri:WorkspaceData'></WorkspaceData>
+</esri:Workspace>

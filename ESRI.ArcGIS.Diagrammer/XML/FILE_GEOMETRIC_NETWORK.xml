@@ -1,0 +1,568 @@
+<esri:Workspace xmlns:esri='http://www.esri.com/schemas/ArcGIS/9.2' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xs='http://www.w3.org/2001/XMLSchema'>
+  <WorkspaceDefinition xsi:type='esri:WorkspaceDefinition'>
+    <WorkspaceType>esriLocalDatabaseWorkspace</WorkspaceType>
+    <Version></Version>
+    <Domains xsi:type='esri:ArrayOfDomain'>
+      <Domain xsi:type='esri:CodedValueDomain'>
+        <DomainName>EnabledDomain</DomainName>
+        <FieldType>esriFieldTypeSmallInteger</FieldType>
+        <MergePolicy>esriMPTDefaultValue</MergePolicy>
+        <SplitPolicy>esriSPTDefaultValue</SplitPolicy>
+        <Description></Description>
+        <Owner></Owner>
+        <CodedValues xsi:type='esri:ArrayOfCodedValue'>
+          <CodedValue xsi:type='esri:CodedValue'>
+            <Name>False</Name>
+            <Code xsi:type='xs:short'>0</Code>
+          </CodedValue>
+          <CodedValue xsi:type='esri:CodedValue'>
+            <Name>True</Name>
+            <Code xsi:type='xs:short'>1</Code>
+          </CodedValue>
+        </CodedValues>
+      </Domain>
+    </Domains>
+    <DatasetDefinitions xsi:type='esri:ArrayOfDataElement'>
+      <DataElement xsi:type='esri:DEFeatureDataset'>
+        <CatalogPath>/FD=Empty</CatalogPath>
+        <Name>Empty</Name>
+        <Children xsi:type='esri:ArrayOfDataElement'>
+          <DataElement xsi:type='esri:DEFeatureClass'>
+            <CatalogPath>/FD=Empty/FC=Empty</CatalogPath>
+            <Name>Empty</Name>
+            <DatasetType>esriDTFeatureClass</DatasetType>
+            <DSID>1</DSID>
+            <Versioned>false</Versioned>
+            <CanVersion>false</CanVersion>
+            <HasOID>true</HasOID>
+            <OIDFieldName>OBJECTID</OIDFieldName>
+            <Fields xsi:type='esri:Fields'>
+              <FieldArray xsi:type='esri:ArrayOfField'>
+                <Field xsi:type='esri:Field'>
+                  <Name>OBJECTID</Name>
+                  <Type>esriFieldTypeOID</Type>
+                  <IsNullable>false</IsNullable>
+                  <Length>4</Length>
+                  <Precision>0</Precision>
+                  <Scale>0</Scale>
+                  <Required>true</Required>
+                  <Editable>false</Editable>
+                  <DomainFixed>true</DomainFixed>
+                  <AliasName>OBJECTID</AliasName>
+                  <ModelName>OBJECTID</ModelName>
+                </Field>
+                <Field xsi:type='esri:Field'>
+                  <Name>SHAPE</Name>
+                  <Type>esriFieldTypeGeometry</Type>
+                  <IsNullable>true</IsNullable>
+                  <Length>0</Length>
+                  <Precision>0</Precision>
+                  <Scale>0</Scale>
+                  <Required>true</Required>
+                  <DomainFixed>true</DomainFixed>
+                  <GeometryDef xsi:type='esri:GeometryDef'>
+                    <AvgNumPoints>0</AvgNumPoints>
+                    <GeometryType>esriGeometryPolyline</GeometryType>
+                    <HasM>false</HasM>
+                    <HasZ>false</HasZ>
+                    <SpatialReference xsi:type='esri:GeographicCoordinateSystem'>
+                      <WKT>GEOGCS[&quot;GCS_WGS_1984&quot;,DATUM[&quot;D_WGS_1984&quot;,SPHEROID[&quot;WGS_1984&quot;,6378137.0,298.257223563]],PRIMEM[&quot;Greenwich&quot;,0.0],UNIT[&quot;Degree&quot;,0.0174532925199433]]</WKT>
+                      <XOrigin>-400</XOrigin>
+                      <YOrigin>-400</YOrigin>
+                      <XYScale>1000000000</XYScale>
+                      <ZOrigin>-100000</ZOrigin>
+                      <ZScale>10000</ZScale>
+                      <MOrigin>-100000</MOrigin>
+                      <MScale>10000</MScale>
+                      <XYTolerance>8.98315284119522E-09</XYTolerance>
+                      <ZTolerance>0.001</ZTolerance>
+                      <MTolerance>0.001</MTolerance>
+                      <HighPrecision>true</HighPrecision>
+                      <LeftLongitude>-180</LeftLongitude>
+                    </SpatialReference>
+                    <GridSize0>1000</GridSize0>
+                  </GeometryDef>
+                  <AliasName>SHAPE</AliasName>
+                  <ModelName>SHAPE</ModelName>
+                </Field>
+                <Field xsi:type='esri:Field'>
+                  <Name>SHAPE_Length</Name>
+                  <Type>esriFieldTypeDouble</Type>
+                  <IsNullable>true</IsNullable>
+                  <Length>8</Length>
+                  <Precision>0</Precision>
+                  <Scale>0</Scale>
+                  <Required>true</Required>
+                  <Editable>false</Editable>
+                  <AliasName>SHAPE_Length</AliasName>
+                  <ModelName>SHAPE_Length</ModelName>
+                </Field>
+                <Field xsi:type='esri:Field'>
+                  <Name>Enabled</Name>
+                  <Type>esriFieldTypeSmallInteger</Type>
+                  <IsNullable>true</IsNullable>
+                  <Length>2</Length>
+                  <Precision>0</Precision>
+                  <Scale>0</Scale>
+                  <Required>true</Required>
+                  <DomainFixed>true</DomainFixed>
+                  <AliasName>Enabled</AliasName>
+                  <ModelName>Enabled</ModelName>
+                  <DefaultValue xsi:type='xs:double'>1</DefaultValue>
+                  <Domain xsi:type='esri:CodedValueDomain'>
+                    <DomainName>EnabledDomain</DomainName>
+                    <FieldType>esriFieldTypeSmallInteger</FieldType>
+                    <MergePolicy>esriMPTDefaultValue</MergePolicy>
+                    <SplitPolicy>esriSPTDefaultValue</SplitPolicy>
+                    <Description></Description>
+                    <Owner></Owner>
+                    <CodedValues xsi:type='esri:ArrayOfCodedValue'>
+                      <CodedValue xsi:type='esri:CodedValue'>
+                        <Name>False</Name>
+                        <Code xsi:type='xs:short'>0</Code>
+                      </CodedValue>
+                      <CodedValue xsi:type='esri:CodedValue'>
+                        <Name>True</Name>
+                        <Code xsi:type='xs:short'>1</Code>
+                      </CodedValue>
+                    </CodedValues>
+                  </Domain>
+                </Field>
+              </FieldArray>
+            </Fields>
+            <Indexes xsi:type='esri:Indexes'>
+              <IndexArray xsi:type='esri:ArrayOfIndex'>
+                <Index xsi:type='esri:Index'>
+                  <Name>FDO_OBJECTID</Name>
+                  <IsUnique>true</IsUnique>
+                  <IsAscending>true</IsAscending>
+                  <Fields xsi:type='esri:Fields'>
+                    <FieldArray xsi:type='esri:ArrayOfField'>
+                      <Field xsi:type='esri:Field'>
+                        <Name>OBJECTID</Name>
+                        <Type>esriFieldTypeOID</Type>
+                        <IsNullable>false</IsNullable>
+                        <Length>4</Length>
+                        <Precision>0</Precision>
+                        <Scale>0</Scale>
+                        <Required>true</Required>
+                        <Editable>false</Editable>
+                        <DomainFixed>true</DomainFixed>
+                        <AliasName>OBJECTID</AliasName>
+                        <ModelName>OBJECTID</ModelName>
+                      </Field>
+                    </FieldArray>
+                  </Fields>
+                </Index>
+                <Index xsi:type='esri:Index'>
+                  <Name>SHAPE_INDEX</Name>
+                  <IsUnique>true</IsUnique>
+                  <IsAscending>true</IsAscending>
+                  <Fields xsi:type='esri:Fields'>
+                    <FieldArray xsi:type='esri:ArrayOfField'>
+                      <Field xsi:type='esri:Field'>
+                        <Name>SHAPE</Name>
+                        <Type>esriFieldTypeGeometry</Type>
+                        <IsNullable>true</IsNullable>
+                        <Length>0</Length>
+                        <Precision>0</Precision>
+                        <Scale>0</Scale>
+                        <Required>true</Required>
+                        <DomainFixed>true</DomainFixed>
+                        <GeometryDef xsi:type='esri:GeometryDef'>
+                          <AvgNumPoints>0</AvgNumPoints>
+                          <GeometryType>esriGeometryPolyline</GeometryType>
+                          <HasM>false</HasM>
+                          <HasZ>false</HasZ>
+                          <SpatialReference xsi:type='esri:GeographicCoordinateSystem'>
+                            <WKT>GEOGCS[&quot;GCS_WGS_1984&quot;,DATUM[&quot;D_WGS_1984&quot;,SPHEROID[&quot;WGS_1984&quot;,6378137.0,298.257223563]],PRIMEM[&quot;Greenwich&quot;,0.0],UNIT[&quot;Degree&quot;,0.0174532925199433]]</WKT>
+                            <XOrigin>-400</XOrigin>
+                            <YOrigin>-400</YOrigin>
+                            <XYScale>1000000000</XYScale>
+                            <ZOrigin>-100000</ZOrigin>
+                            <ZScale>10000</ZScale>
+                            <MOrigin>-100000</MOrigin>
+                            <MScale>10000</MScale>
+                            <XYTolerance>8.98315284119522E-09</XYTolerance>
+                            <ZTolerance>0.001</ZTolerance>
+                            <MTolerance>0.001</MTolerance>
+                            <HighPrecision>true</HighPrecision>
+                            <LeftLongitude>-180</LeftLongitude>
+                          </SpatialReference>
+                          <GridSize0>1000</GridSize0>
+                        </GeometryDef>
+                        <AliasName>SHAPE</AliasName>
+                        <ModelName>SHAPE</ModelName>
+                      </Field>
+                    </FieldArray>
+                  </Fields>
+                </Index>
+              </IndexArray>
+            </Indexes>
+            <CLSID>{E7031C90-55FE-11D1-AE55-0000F80372B4}</CLSID>
+            <EXTCLSID></EXTCLSID>
+            <RelationshipClassNames xsi:type='esri:Names'></RelationshipClassNames>
+            <AliasName>Empty</AliasName>
+            <ModelName></ModelName>
+            <HasGlobalID>false</HasGlobalID>
+            <GlobalIDFieldName></GlobalIDFieldName>
+            <RasterFieldName></RasterFieldName>
+            <ExtensionProperties xsi:type='esri:PropertySet'>
+              <PropertyArray xsi:type='esri:ArrayOfPropertySetProperty'></PropertyArray>
+            </ExtensionProperties>
+            <ControllerMemberships xsi:type='esri:ArrayOfControllerMembership'>
+              <ControllerMembership xsi:type='esri:GeometricNetworkMembership'>
+                <GeometricNetworkName>Empty_Net</GeometricNetworkName>
+                <EnabledFieldName>Enabled</EnabledFieldName>
+                <AncillaryRoleFieldName></AncillaryRoleFieldName>
+                <NetworkClassAncillaryRole>esriNCARNone</NetworkClassAncillaryRole>
+              </ControllerMembership>
+            </ControllerMemberships>
+            <FeatureType>esriFTSimpleEdge</FeatureType>
+            <ShapeType>esriGeometryPolyline</ShapeType>
+            <ShapeFieldName>SHAPE</ShapeFieldName>
+            <HasM>false</HasM>
+            <HasZ>false</HasZ>
+            <HasSpatialIndex>true</HasSpatialIndex>
+            <AreaFieldName></AreaFieldName>
+            <LengthFieldName>SHAPE_Length</LengthFieldName>
+            <Extent xsi:type='esri:EnvelopeN'>
+              <SpatialReference xsi:type='esri:GeographicCoordinateSystem'>
+                <WKT>GEOGCS[&quot;GCS_WGS_1984&quot;,DATUM[&quot;D_WGS_1984&quot;,SPHEROID[&quot;WGS_1984&quot;,6378137.0,298.257223563]],PRIMEM[&quot;Greenwich&quot;,0.0],UNIT[&quot;Degree&quot;,0.0174532925199433]]</WKT>
+                <XOrigin>-400</XOrigin>
+                <YOrigin>-400</YOrigin>
+                <XYScale>1000000000</XYScale>
+                <ZOrigin>-100000</ZOrigin>
+                <ZScale>10000</ZScale>
+                <MOrigin>-100000</MOrigin>
+                <MScale>10000</MScale>
+                <XYTolerance>8.98315284119522E-09</XYTolerance>
+                <ZTolerance>0.001</ZTolerance>
+                <MTolerance>0.001</MTolerance>
+                <HighPrecision>true</HighPrecision>
+                <LeftLongitude>-180</LeftLongitude>
+              </SpatialReference>
+            </Extent>
+            <SpatialReference xsi:type='esri:GeographicCoordinateSystem'>
+              <WKT>GEOGCS[&quot;GCS_WGS_1984&quot;,DATUM[&quot;D_WGS_1984&quot;,SPHEROID[&quot;WGS_1984&quot;,6378137.0,298.257223563]],PRIMEM[&quot;Greenwich&quot;,0.0],UNIT[&quot;Degree&quot;,0.0174532925199433]]</WKT>
+              <XOrigin>-400</XOrigin>
+              <YOrigin>-400</YOrigin>
+              <XYScale>1000000000</XYScale>
+              <ZOrigin>-100000</ZOrigin>
+              <ZScale>10000</ZScale>
+              <MOrigin>-100000</MOrigin>
+              <MScale>10000</MScale>
+              <XYTolerance>8.98315284119522E-09</XYTolerance>
+              <ZTolerance>0.001</ZTolerance>
+              <MTolerance>0.001</MTolerance>
+              <HighPrecision>true</HighPrecision>
+              <LeftLongitude>-180</LeftLongitude>
+            </SpatialReference>
+          </DataElement>
+          <DataElement xsi:type='esri:DEFeatureClass'>
+            <CatalogPath>/FD=Empty/FC=Empty_Net_Junctions</CatalogPath>
+            <Name>Empty_Net_Junctions</Name>
+            <DatasetType>esriDTFeatureClass</DatasetType>
+            <DSID>2</DSID>
+            <Versioned>false</Versioned>
+            <CanVersion>false</CanVersion>
+            <HasOID>true</HasOID>
+            <OIDFieldName>OBJECTID</OIDFieldName>
+            <Fields xsi:type='esri:Fields'>
+              <FieldArray xsi:type='esri:ArrayOfField'>
+                <Field xsi:type='esri:Field'>
+                  <Name>OBJECTID</Name>
+                  <Type>esriFieldTypeOID</Type>
+                  <IsNullable>false</IsNullable>
+                  <Length>4</Length>
+                  <Precision>0</Precision>
+                  <Scale>0</Scale>
+                  <Required>true</Required>
+                  <Editable>false</Editable>
+                  <AliasName>OBJECTID</AliasName>
+                  <ModelName>OBJECTID</ModelName>
+                </Field>
+                <Field xsi:type='esri:Field'>
+                  <Name>SHAPE</Name>
+                  <Type>esriFieldTypeGeometry</Type>
+                  <IsNullable>true</IsNullable>
+                  <Length>0</Length>
+                  <Precision>0</Precision>
+                  <Scale>0</Scale>
+                  <Required>true</Required>
+                  <GeometryDef xsi:type='esri:GeometryDef'>
+                    <AvgNumPoints>0</AvgNumPoints>
+                    <GeometryType>esriGeometryPoint</GeometryType>
+                    <HasM>false</HasM>
+                    <HasZ>false</HasZ>
+                    <SpatialReference xsi:type='esri:GeographicCoordinateSystem'>
+                      <WKT>GEOGCS[&quot;GCS_WGS_1984&quot;,DATUM[&quot;D_WGS_1984&quot;,SPHEROID[&quot;WGS_1984&quot;,6378137.0,298.257223563]],PRIMEM[&quot;Greenwich&quot;,0.0],UNIT[&quot;Degree&quot;,0.0174532925199433]]</WKT>
+                      <XOrigin>-400</XOrigin>
+                      <YOrigin>-400</YOrigin>
+                      <XYScale>1000000000</XYScale>
+                      <ZOrigin>-100000</ZOrigin>
+                      <ZScale>10000</ZScale>
+                      <MOrigin>-100000</MOrigin>
+                      <MScale>10000</MScale>
+                      <XYTolerance>8.98315284119522E-09</XYTolerance>
+                      <ZTolerance>0.001</ZTolerance>
+                      <MTolerance>0.001</MTolerance>
+                      <HighPrecision>true</HighPrecision>
+                      <LeftLongitude>-180</LeftLongitude>
+                    </SpatialReference>
+                    <GridSize0>1000</GridSize0>
+                  </GeometryDef>
+                  <AliasName>SHAPE</AliasName>
+                  <ModelName>SHAPE</ModelName>
+                </Field>
+                <Field xsi:type='esri:Field'>
+                  <Name>Enabled</Name>
+                  <Type>esriFieldTypeSmallInteger</Type>
+                  <IsNullable>true</IsNullable>
+                  <Length>2</Length>
+                  <Precision>0</Precision>
+                  <Scale>0</Scale>
+                  <Required>true</Required>
+                  <DomainFixed>true</DomainFixed>
+                  <AliasName>Enabled</AliasName>
+                  <ModelName>Enabled</ModelName>
+                  <DefaultValue xsi:type='xs:double'>1</DefaultValue>
+                  <Domain xsi:type='esri:CodedValueDomain'>
+                    <DomainName>EnabledDomain</DomainName>
+                    <FieldType>esriFieldTypeSmallInteger</FieldType>
+                    <MergePolicy>esriMPTDefaultValue</MergePolicy>
+                    <SplitPolicy>esriSPTDefaultValue</SplitPolicy>
+                    <Description></Description>
+                    <Owner></Owner>
+                    <CodedValues xsi:type='esri:ArrayOfCodedValue'>
+                      <CodedValue xsi:type='esri:CodedValue'>
+                        <Name>False</Name>
+                        <Code xsi:type='xs:short'>0</Code>
+                      </CodedValue>
+                      <CodedValue xsi:type='esri:CodedValue'>
+                        <Name>True</Name>
+                        <Code xsi:type='xs:short'>1</Code>
+                      </CodedValue>
+                    </CodedValues>
+                  </Domain>
+                </Field>
+              </FieldArray>
+            </Fields>
+            <Indexes xsi:type='esri:Indexes'>
+              <IndexArray xsi:type='esri:ArrayOfIndex'>
+                <Index xsi:type='esri:Index'>
+                  <Name>FDO_OBJECTID</Name>
+                  <IsUnique>true</IsUnique>
+                  <IsAscending>true</IsAscending>
+                  <Fields xsi:type='esri:Fields'>
+                    <FieldArray xsi:type='esri:ArrayOfField'>
+                      <Field xsi:type='esri:Field'>
+                        <Name>OBJECTID</Name>
+                        <Type>esriFieldTypeOID</Type>
+                        <IsNullable>false</IsNullable>
+                        <Length>4</Length>
+                        <Precision>0</Precision>
+                        <Scale>0</Scale>
+                        <Required>true</Required>
+                        <Editable>false</Editable>
+                        <AliasName>OBJECTID</AliasName>
+                        <ModelName>OBJECTID</ModelName>
+                      </Field>
+                    </FieldArray>
+                  </Fields>
+                </Index>
+                <Index xsi:type='esri:Index'>
+                  <Name>SHAPE_INDEX</Name>
+                  <IsUnique>true</IsUnique>
+                  <IsAscending>true</IsAscending>
+                  <Fields xsi:type='esri:Fields'>
+                    <FieldArray xsi:type='esri:ArrayOfField'>
+                      <Field xsi:type='esri:Field'>
+                        <Name>SHAPE</Name>
+                        <Type>esriFieldTypeGeometry</Type>
+                        <IsNullable>true</IsNullable>
+                        <Length>0</Length>
+                        <Precision>0</Precision>
+                        <Scale>0</Scale>
+                        <Required>true</Required>
+                        <GeometryDef xsi:type='esri:GeometryDef'>
+                          <AvgNumPoints>0</AvgNumPoints>
+                          <GeometryType>esriGeometryPoint</GeometryType>
+                          <HasM>false</HasM>
+                          <HasZ>false</HasZ>
+                          <SpatialReference xsi:type='esri:GeographicCoordinateSystem'>
+                            <WKT>GEOGCS[&quot;GCS_WGS_1984&quot;,DATUM[&quot;D_WGS_1984&quot;,SPHEROID[&quot;WGS_1984&quot;,6378137.0,298.257223563]],PRIMEM[&quot;Greenwich&quot;,0.0],UNIT[&quot;Degree&quot;,0.0174532925199433]]</WKT>
+                            <XOrigin>-400</XOrigin>
+                            <YOrigin>-400</YOrigin>
+                            <XYScale>1000000000</XYScale>
+                            <ZOrigin>-100000</ZOrigin>
+                            <ZScale>10000</ZScale>
+                            <MOrigin>-100000</MOrigin>
+                            <MScale>10000</MScale>
+                            <XYTolerance>8.98315284119522E-09</XYTolerance>
+                            <ZTolerance>0.001</ZTolerance>
+                            <MTolerance>0.001</MTolerance>
+                            <HighPrecision>true</HighPrecision>
+                            <LeftLongitude>-180</LeftLongitude>
+                          </SpatialReference>
+                          <GridSize0>1000</GridSize0>
+                        </GeometryDef>
+                        <AliasName>SHAPE</AliasName>
+                        <ModelName>SHAPE</ModelName>
+                      </Field>
+                    </FieldArray>
+                  </Fields>
+                </Index>
+              </IndexArray>
+            </Indexes>
+            <CLSID>{CEE8D6B8-55FE-11D1-AE55-0000F80372B4}</CLSID>
+            <EXTCLSID></EXTCLSID>
+            <RelationshipClassNames xsi:type='esri:Names'></RelationshipClassNames>
+            <AliasName>Empty_Net_Junctions</AliasName>
+            <ModelName></ModelName>
+            <HasGlobalID>false</HasGlobalID>
+            <GlobalIDFieldName></GlobalIDFieldName>
+            <RasterFieldName></RasterFieldName>
+            <ExtensionProperties xsi:type='esri:PropertySet'>
+              <PropertyArray xsi:type='esri:ArrayOfPropertySetProperty'></PropertyArray>
+            </ExtensionProperties>
+            <ControllerMemberships xsi:type='esri:ArrayOfControllerMembership'>
+              <ControllerMembership xsi:type='esri:GeometricNetworkMembership'>
+                <GeometricNetworkName>Empty_Net</GeometricNetworkName>
+                <EnabledFieldName>Enabled</EnabledFieldName>
+                <AncillaryRoleFieldName></AncillaryRoleFieldName>
+                <NetworkClassAncillaryRole>esriNCARNone</NetworkClassAncillaryRole>
+              </ControllerMembership>
+            </ControllerMemberships>
+            <FeatureType>esriFTSimpleJunction</FeatureType>
+            <ShapeType>esriGeometryPoint</ShapeType>
+            <ShapeFieldName>SHAPE</ShapeFieldName>
+            <HasM>false</HasM>
+            <HasZ>false</HasZ>
+            <HasSpatialIndex>true</HasSpatialIndex>
+            <AreaFieldName></AreaFieldName>
+            <LengthFieldName></LengthFieldName>
+            <Extent xsi:type='esri:EnvelopeN'>
+              <SpatialReference xsi:type='esri:GeographicCoordinateSystem'>
+                <WKT>GEOGCS[&quot;GCS_WGS_1984&quot;,DATUM[&quot;D_WGS_1984&quot;,SPHEROID[&quot;WGS_1984&quot;,6378137.0,298.257223563]],PRIMEM[&quot;Greenwich&quot;,0.0],UNIT[&quot;Degree&quot;,0.0174532925199433]]</WKT>
+                <XOrigin>-400</XOrigin>
+                <YOrigin>-400</YOrigin>
+                <XYScale>1000000000</XYScale>
+                <ZOrigin>-100000</ZOrigin>
+                <ZScale>10000</ZScale>
+                <MOrigin>-100000</MOrigin>
+                <MScale>10000</MScale>
+                <XYTolerance>8.98315284119522E-09</XYTolerance>
+                <ZTolerance>0.001</ZTolerance>
+                <MTolerance>0.001</MTolerance>
+                <HighPrecision>true</HighPrecision>
+                <LeftLongitude>-180</LeftLongitude>
+              </SpatialReference>
+            </Extent>
+            <SpatialReference xsi:type='esri:GeographicCoordinateSystem'>
+              <WKT>GEOGCS[&quot;GCS_WGS_1984&quot;,DATUM[&quot;D_WGS_1984&quot;,SPHEROID[&quot;WGS_1984&quot;,6378137.0,298.257223563]],PRIMEM[&quot;Greenwich&quot;,0.0],UNIT[&quot;Degree&quot;,0.0174532925199433]]</WKT>
+              <XOrigin>-400</XOrigin>
+              <YOrigin>-400</YOrigin>
+              <XYScale>1000000000</XYScale>
+              <ZOrigin>-100000</ZOrigin>
+              <ZScale>10000</ZScale>
+              <MOrigin>-100000</MOrigin>
+              <MScale>10000</MScale>
+              <XYTolerance>8.98315284119522E-09</XYTolerance>
+              <ZTolerance>0.001</ZTolerance>
+              <MTolerance>0.001</MTolerance>
+              <HighPrecision>true</HighPrecision>
+              <LeftLongitude>-180</LeftLongitude>
+            </SpatialReference>
+          </DataElement>
+          <DataElement xsi:type='esri:DEGeometricNetwork'>
+            <CatalogPath>/FD=Empty/GN=Empty_Net</CatalogPath>
+            <Name>Empty_Net</Name>
+            <DatasetType>esriDTGeometricNetwork</DatasetType>
+            <DSID>-1</DSID>
+            <Versioned>false</Versioned>
+            <CanVersion>true</CanVersion>
+            <Extent xsi:type='esri:EnvelopeN'>
+              <SpatialReference xsi:type='esri:GeographicCoordinateSystem'>
+                <WKT>GEOGCS[&quot;GCS_WGS_1984&quot;,DATUM[&quot;D_WGS_1984&quot;,SPHEROID[&quot;WGS_1984&quot;,6378137.0,298.257223563]],PRIMEM[&quot;Greenwich&quot;,0.0],UNIT[&quot;Degree&quot;,0.0174532925199433]]</WKT>
+                <XOrigin>-400</XOrigin>
+                <YOrigin>-400</YOrigin>
+                <XYScale>1000000000</XYScale>
+                <ZOrigin>-100000</ZOrigin>
+                <ZScale>10000</ZScale>
+                <MOrigin>-100000</MOrigin>
+                <MScale>10000</MScale>
+                <XYTolerance>8.98315284119522E-09</XYTolerance>
+                <ZTolerance>0.001</ZTolerance>
+                <MTolerance>0.001</MTolerance>
+                <HighPrecision>true</HighPrecision>
+                <LeftLongitude>-180</LeftLongitude>
+              </SpatialReference>
+            </Extent>
+            <SpatialReference xsi:type='esri:GeographicCoordinateSystem'>
+              <WKT>GEOGCS[&quot;GCS_WGS_1984&quot;,DATUM[&quot;D_WGS_1984&quot;,SPHEROID[&quot;WGS_1984&quot;,6378137.0,298.257223563]],PRIMEM[&quot;Greenwich&quot;,0.0],UNIT[&quot;Degree&quot;,0.0174532925199433]]</WKT>
+              <XOrigin>-400</XOrigin>
+              <YOrigin>-400</YOrigin>
+              <XYScale>1000000000</XYScale>
+              <ZOrigin>-100000</ZOrigin>
+              <ZScale>10000</ZScale>
+              <MOrigin>-100000</MOrigin>
+              <MScale>10000</MScale>
+              <XYTolerance>8.98315284119522E-09</XYTolerance>
+              <ZTolerance>0.001</ZTolerance>
+              <MTolerance>0.001</MTolerance>
+              <HighPrecision>true</HighPrecision>
+              <LeftLongitude>-180</LeftLongitude>
+            </SpatialReference>
+            <NetworkType>esriNTUtilityNetwork</NetworkType>
+            <OrphanJunctionFeatureClassName>Empty_Net_Junctions</OrphanJunctionFeatureClassName>
+            <FeatureClassNames xsi:type='esri:Names'>
+              <Name>Empty</Name>
+              <Name>Empty_Net_Junctions</Name>
+            </FeatureClassNames>
+            <ConnectivityRules xsi:type='esri:ArrayOfConnectivityRule'></ConnectivityRules>
+            <NetworkWeights xsi:type='esri:ArrayOfNetWeight'></NetworkWeights>
+            <WeightAssociations xsi:type='esri:ArrayOfNetWeightAssociation'></WeightAssociations>
+          </DataElement>
+        </Children>
+        <DatasetType>esriDTFeatureDataset</DatasetType>
+        <DSID>-1</DSID>
+        <Versioned>false</Versioned>
+        <CanVersion>false</CanVersion>
+        <Extent xsi:type='esri:EnvelopeN'>
+          <SpatialReference xsi:type='esri:GeographicCoordinateSystem'>
+            <WKT>GEOGCS[&quot;GCS_WGS_1984&quot;,DATUM[&quot;D_WGS_1984&quot;,SPHEROID[&quot;WGS_1984&quot;,6378137.0,298.257223563]],PRIMEM[&quot;Greenwich&quot;,0.0],UNIT[&quot;Degree&quot;,0.0174532925199433]]</WKT>
+            <XOrigin>-400</XOrigin>
+            <YOrigin>-400</YOrigin>
+            <XYScale>1000000000</XYScale>
+            <ZOrigin>-100000</ZOrigin>
+            <ZScale>10000</ZScale>
+            <MOrigin>-100000</MOrigin>
+            <MScale>10000</MScale>
+            <XYTolerance>8.98315284119522E-09</XYTolerance>
+            <ZTolerance>0.001</ZTolerance>
+            <MTolerance>0.001</MTolerance>
+            <HighPrecision>true</HighPrecision>
+            <LeftLongitude>-180</LeftLongitude>
+          </SpatialReference>
+        </Extent>
+        <SpatialReference xsi:type='esri:GeographicCoordinateSystem'>
+          <WKT>GEOGCS[&quot;GCS_WGS_1984&quot;,DATUM[&quot;D_WGS_1984&quot;,SPHEROID[&quot;WGS_1984&quot;,6378137.0,298.257223563]],PRIMEM[&quot;Greenwich&quot;,0.0],UNIT[&quot;Degree&quot;,0.0174532925199433]]</WKT>
+          <XOrigin>-400</XOrigin>
+          <YOrigin>-400</YOrigin>
+          <XYScale>1000000000</XYScale>
+          <ZOrigin>-100000</ZOrigin>
+          <ZScale>10000</ZScale>
+          <MOrigin>-100000</MOrigin>
+          <MScale>10000</MScale>
+          <XYTolerance>8.98315284119522E-09</XYTolerance>
+          <ZTolerance>0.001</ZTolerance>
+          <MTolerance>0.001</MTolerance>
+          <HighPrecision>true</HighPrecision>
+          <LeftLongitude>-180</LeftLongitude>
+        </SpatialReference>
+      </DataElement>
+    </DatasetDefinitions>
+  </WorkspaceDefinition>
+  <WorkspaceData xsi:type='esri:WorkspaceData'></WorkspaceData>
+</esri:Workspace>

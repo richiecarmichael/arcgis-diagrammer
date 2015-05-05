@@ -1,0 +1,132 @@
+HISTORY
+=======
+
+10.0.1
+  - Added missing file (Interop.MSXML.Dll) that prevent viewing of metadata.
+
+10.0.0
+  - Port ArcGIS Diagrammer to 10 (fix metadata stylesheet).
+  - Add support for Terrain datasets.
+  - Added better error trapping for null spatial reference and extents.
+  - Relationships can be added to/from RasterCatalogs.
+  - Fixed bad links on the Help menu.
+
+1.0.3567.18822 (10/07/2009)
+  - Improved support for custom feature classes.
+
+1.0.3526.28983 (8/27/2009)
+ - Added support for non-ASCII characters in data reporter. 
+
+1.0.3422.28156 (05/15/2009)
+ - Trap null Extent and SpatialReference in FeatureClass constructor.
+ - Added links to new tutorials (Help > Tutorials > *)
+ - Added Align left, right, center, top, bottom and middle commands.
+ - Unlock diagram and shape properties.
+ - Added fixed to prevent the addition of unselectable link heads.
+ - Cannot add undocked links.
+ - PropertyGrids in custom collection editors resemble the Diagrammer PropertyGrid.
+ - Validator removes undocked links.
+ - Validator removes duplicate (overlapping) links.
+ - The default validator is now a file geodatabase.
+ - Increase maximum size of tables from 1,000 x 1,000 to 1,000 x 100,000 (wxh).
+ - Hitting the tab key will advance to the next item in the property window.
+ - Supporting domains for Annotation are not added if they already exist.
+ - File name included in HTML Schema Reports.
+ - Add geodatabase type and filename to Data Reports.
+ - Fixed bad link: Start > Program Files > ArcGIS Diagrammer > User Forum.
+ - Fixed shortcut key for Edit > Paste (Control-V not Control-P).
+ - Remove validator error about esriFieldTypeGlobalID being unsupported.
+ - Adding support for Google maps style panning with the middle mouse button.
+ - New objects added from palette are selected.
+ - Property window updates correctly as objects are added/removed.
+
+1.0.3111.23175 (07/08/2008)
+ - "Has Z" shows correct value in schema reports.
+ - The file "file_geodatabase_exchange.xsd" is now included in the source code.
+
+1.0.3091.24321 (06/18/2008)
+ - Add support for SVG export.
+ - Add version interoperability for *.diagram files (for ArcGIS Desktop 9.2 & 9.3).
+
+1.0.3090.20339 (06/17/2008)
+ - Improved behavior of gridsize properties in a GeometryDef object.
+   (to omit a specific grid size enter "-1" or select "(None)" from the dropdown menu)
+ 
+1.0.3084.14342 (06/11/2008)
+ - Fix typo in Data Report.
+
+1.0.3079.28170 (06/06/2008)
+ - Fix: Cancelling a spatial reference edit dialog clears WKT property.
+ - Extent, SpatialReference, GeometryDef, StorageRef & NetworkDirections properties have improved
+   behavour in the Properties Window.
+ - Add domain name refactoring (renaming updates all references).
+ - Add Table/FeatureClass name refactoring.
+ - Add compatiablity for 9.3 xml workspace documents.
+ - Add menu to change color scheme (blue, black or silver).
+ - Add validation for relationships, geometric network controllers and rules.
+ - Improved formatting in HTML data report.
+ - Change Diagrammer Icon.
+
+1.0.3050.27448 (05/08/2008) 
+ - Fixed typos (eg "Open Edge Junction Diagram").
+ - Fixed PropertySetProperty bug in Annotation FeaureClasses.
+ - Updated Help Menu. Added links to user guide, history and tutorials.
+ - Added Xml Schema Checker. Validates XML using ESRI geodatabase XSD.
+ - Changed Diagrammer Icon.
+ - Changed start menu path to "Start > All Programs > ArcGIS Diagrammer > 
+
+1.0.2911.33955 (12/21/2007) 
+- "*.diagram" is now the default file type when saving (File>Save, File>SaveAs). 
+- "*.diagram" files are now associated with the ArcGIS Diagrammer application. Double clicking on a *.diagram file will launch Diagrammer. 
+- Diagrams now have a dirty flag. You will only be prompted to save when closing (or exiting) if the diagram has edits. 
+- Clicking the Save button on the main toolbar performs File>Save and not File>SaveAs. 
+- To create a xml workspace document, click File > Publish... 
+- IMPORTANT: Diagram documents created with previous versions are NOT compatiable with this version. 
+
+1.0.2904.29636 (12/14/2007)
+- Data and Schema Reports refresh after options have been changed (eg change font).
+- Geodatabase objects can now be copied and pasted between separate instances of ArcGIS Diagrammer.
+
+1.0.2902.32276 (12/12/2007)
+- Rebuilt ArcGIS Diagrammer so that it will work with:
+  ArcGIS Desktop 9.2, 9.2SP1, 9.2SP2, 9.2SP3, 9.2SP4
+
+1.0.2901.33281 (12/11/2007)
+- Remove video and user guide from install.
+- Added a check for ESRI bug NIM013605 (Subtype default value conflict with table domain).
+
+1.0.2897.29624 (12/7/2007)
+- Added support for 64-bit OS (XP & Vista).
+- Trap exceptions raised when loading Xml Workspace Documents.
+- Unicode is now the default encoder for diagrams when exporting to XML.
+- Xml encoder moved property options dialog to the diagram properies.
+- Added support for 9.3 xml workspace documents.
+- Improved the exceptions dialog.
+- Updated UI to be similar to Microsoft Office 2007.
+- Domains with spaces in names do not appear as an error in validator.
+
+1.0.0.0 (09/01/2007)
+- Diagram color now update correctly after changing in the Options dialog. 
+
+1.0.0.0 (08/31/2007)
+- Support reordering or fields, indexes, coded values and subtype fields. 
+  (click on ellipse button a collection property to display an editor) 
+- Click the ellipse button next to a Metadata property will display the ISO Metadata Editor. 
+- Improved context menus for objects in the diagram. New items include: 
+  "Validate" - Validate only the currently selected object. 
+  "View Metadata" - Displays the metadata of the currently selected object in a new tab. 
+- Fixed bug associated with the ObjectClass::CLSID and ::EXTCLSID properties. 
+- ArcGIS Diagrammer now requires ArcGIS Desktop (with any desktop license.) 
+
+1.0.0.0 (08/03/2007)
+- The data report property "WorkspaceName" does not display "System.__ComObject" anymore (if set). 
+- Added more error trapping to the data report. 
+
+1.0.0.0 (07/31/2007)
+- Add copy/paste to the Properties Window 
+- Improved performance Xml Export, Catalog Window and Validation 
+- Added XML export options (Tools > Options > Diagram) to specify alternative encoding and optional indentation. 
+- User guide updated. 50% complete. 
+- Improved File > New/Open/Close dialog messages. 
+- New geodatabase objects added from palette are collapsed not expanded. 
+- New geodatabase objects added from palette do not have a size limit of 350x350.

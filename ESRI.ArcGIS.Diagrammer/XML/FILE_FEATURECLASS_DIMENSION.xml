@@ -1,0 +1,428 @@
+<esri:Workspace xmlns:esri='http://www.esri.com/schemas/ArcGIS/9.2' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xs='http://www.w3.org/2001/XMLSchema'>
+  <WorkspaceDefinition xsi:type='esri:WorkspaceDefinition'>
+    <WorkspaceType>esriLocalDatabaseWorkspace</WorkspaceType>
+    <Version></Version>
+    <Domains xsi:type='esri:ArrayOfDomain'></Domains>
+    <DatasetDefinitions xsi:type='esri:ArrayOfDataElement'>
+      <DataElement xsi:type='esri:DEFeatureClass'>
+        <CatalogPath>/FC=Empty</CatalogPath>
+        <Name>Empty</Name>
+        <DatasetType>esriDTFeatureClass</DatasetType>
+        <DSID>1</DSID>
+        <Versioned>false</Versioned>
+        <CanVersion>false</CanVersion>
+        <HasOID>true</HasOID>
+        <OIDFieldName>OBJECTID</OIDFieldName>
+        <Fields xsi:type='esri:Fields'>
+          <FieldArray xsi:type='esri:ArrayOfField'>
+            <Field xsi:type='esri:Field'>
+              <Name>OBJECTID</Name>
+              <Type>esriFieldTypeOID</Type>
+              <IsNullable>false</IsNullable>
+              <Length>4</Length>
+              <Precision>0</Precision>
+              <Scale>0</Scale>
+              <Required>true</Required>
+              <Editable>false</Editable>
+              <DomainFixed>true</DomainFixed>
+              <AliasName>OBJECTID</AliasName>
+              <ModelName>OBJECTID</ModelName>
+            </Field>
+            <Field xsi:type='esri:Field'>
+              <Name>SHAPE</Name>
+              <Type>esriFieldTypeGeometry</Type>
+              <IsNullable>true</IsNullable>
+              <Length>0</Length>
+              <Precision>0</Precision>
+              <Scale>0</Scale>
+              <Required>true</Required>
+              <DomainFixed>true</DomainFixed>
+              <GeometryDef xsi:type='esri:GeometryDef'>
+                <AvgNumPoints>0</AvgNumPoints>
+                <GeometryType>esriGeometryPolygon</GeometryType>
+                <HasM>false</HasM>
+                <HasZ>false</HasZ>
+                <SpatialReference xsi:type='esri:GeographicCoordinateSystem'>
+                  <WKT>GEOGCS[&quot;GCS_WGS_1984&quot;,DATUM[&quot;D_WGS_1984&quot;,SPHEROID[&quot;WGS_1984&quot;,6378137.0,298.257223563]],PRIMEM[&quot;Greenwich&quot;,0.0],UNIT[&quot;Degree&quot;,0.0174532925199433]]</WKT>
+                  <XOrigin>-400</XOrigin>
+                  <YOrigin>-400</YOrigin>
+                  <XYScale>1000000000</XYScale>
+                  <XYTolerance>8.98315284119522E-09</XYTolerance>
+                  <HighPrecision>true</HighPrecision>
+                  <LeftLongitude>-180</LeftLongitude>
+                </SpatialReference>
+                <GridSize0>1000</GridSize0>
+              </GeometryDef>
+              <AliasName>SHAPE</AliasName>
+              <ModelName>SHAPE</ModelName>
+            </Field>
+            <Field xsi:type='esri:Field'>
+              <Name>DIMLENGTH</Name>
+              <Type>esriFieldTypeDouble</Type>
+              <IsNullable>false</IsNullable>
+              <Length>8</Length>
+              <Precision>0</Precision>
+              <Scale>0</Scale>
+              <Required>true</Required>
+              <AliasName>DIMLENGTH</AliasName>
+              <ModelName>DIMLENGTH</ModelName>
+            </Field>
+            <Field xsi:type='esri:Field'>
+              <Name>BEGINX</Name>
+              <Type>esriFieldTypeDouble</Type>
+              <IsNullable>true</IsNullable>
+              <Length>8</Length>
+              <Precision>0</Precision>
+              <Scale>0</Scale>
+              <Required>true</Required>
+              <AliasName>BEGINX</AliasName>
+              <ModelName>BEGINX</ModelName>
+            </Field>
+            <Field xsi:type='esri:Field'>
+              <Name>BEGINY</Name>
+              <Type>esriFieldTypeDouble</Type>
+              <IsNullable>true</IsNullable>
+              <Length>8</Length>
+              <Precision>0</Precision>
+              <Scale>0</Scale>
+              <Required>true</Required>
+              <AliasName>BEGINY</AliasName>
+              <ModelName>BEGINY</ModelName>
+            </Field>
+            <Field xsi:type='esri:Field'>
+              <Name>ENDX</Name>
+              <Type>esriFieldTypeDouble</Type>
+              <IsNullable>true</IsNullable>
+              <Length>8</Length>
+              <Precision>0</Precision>
+              <Scale>0</Scale>
+              <Required>true</Required>
+              <AliasName>ENDX</AliasName>
+              <ModelName>ENDX</ModelName>
+            </Field>
+            <Field xsi:type='esri:Field'>
+              <Name>ENDY</Name>
+              <Type>esriFieldTypeDouble</Type>
+              <IsNullable>true</IsNullable>
+              <Length>8</Length>
+              <Precision>0</Precision>
+              <Scale>0</Scale>
+              <Required>true</Required>
+              <AliasName>ENDY</AliasName>
+              <ModelName>ENDY</ModelName>
+            </Field>
+            <Field xsi:type='esri:Field'>
+              <Name>DIMX</Name>
+              <Type>esriFieldTypeDouble</Type>
+              <IsNullable>true</IsNullable>
+              <Length>8</Length>
+              <Precision>0</Precision>
+              <Scale>0</Scale>
+              <Required>true</Required>
+              <AliasName>DIMX</AliasName>
+              <ModelName>DIMX</ModelName>
+            </Field>
+            <Field xsi:type='esri:Field'>
+              <Name>DIMY</Name>
+              <Type>esriFieldTypeDouble</Type>
+              <IsNullable>true</IsNullable>
+              <Length>8</Length>
+              <Precision>0</Precision>
+              <Scale>0</Scale>
+              <Required>true</Required>
+              <AliasName>DIMY</AliasName>
+              <ModelName>DIMY</ModelName>
+            </Field>
+            <Field xsi:type='esri:Field'>
+              <Name>TEXTX</Name>
+              <Type>esriFieldTypeDouble</Type>
+              <IsNullable>true</IsNullable>
+              <Length>8</Length>
+              <Precision>0</Precision>
+              <Scale>0</Scale>
+              <Required>true</Required>
+              <AliasName>TEXTX</AliasName>
+              <ModelName>TEXTX</ModelName>
+            </Field>
+            <Field xsi:type='esri:Field'>
+              <Name>TEXTY</Name>
+              <Type>esriFieldTypeDouble</Type>
+              <IsNullable>true</IsNullable>
+              <Length>8</Length>
+              <Precision>0</Precision>
+              <Scale>0</Scale>
+              <Required>true</Required>
+              <AliasName>TEXTY</AliasName>
+              <ModelName>TEXTY</ModelName>
+            </Field>
+            <Field xsi:type='esri:Field'>
+              <Name>DIMTYPE</Name>
+              <Type>esriFieldTypeDouble</Type>
+              <IsNullable>true</IsNullable>
+              <Length>8</Length>
+              <Precision>0</Precision>
+              <Scale>0</Scale>
+              <Required>true</Required>
+              <AliasName>DIMTYPE</AliasName>
+              <ModelName>DIMTYPE</ModelName>
+            </Field>
+            <Field xsi:type='esri:Field'>
+              <Name>EXTANGLE</Name>
+              <Type>esriFieldTypeDouble</Type>
+              <IsNullable>true</IsNullable>
+              <Length>8</Length>
+              <Precision>0</Precision>
+              <Scale>0</Scale>
+              <Required>true</Required>
+              <AliasName>EXTANGLE</AliasName>
+              <ModelName>EXTANGLE</ModelName>
+            </Field>
+            <Field xsi:type='esri:Field'>
+              <Name>STYLEID</Name>
+              <Type>esriFieldTypeInteger</Type>
+              <IsNullable>true</IsNullable>
+              <Length>4</Length>
+              <Precision>0</Precision>
+              <Scale>0</Scale>
+              <Required>true</Required>
+              <AliasName>STYLEID</AliasName>
+              <ModelName>STYLEID</ModelName>
+            </Field>
+            <Field xsi:type='esri:Field'>
+              <Name>USECUSTOMLENGTH</Name>
+              <Type>esriFieldTypeSmallInteger</Type>
+              <IsNullable>false</IsNullable>
+              <Length>2</Length>
+              <Precision>0</Precision>
+              <Scale>0</Scale>
+              <Required>true</Required>
+              <AliasName>USECUSTOMLENGTH</AliasName>
+              <ModelName>USECUSTOMLENGTH</ModelName>
+            </Field>
+            <Field xsi:type='esri:Field'>
+              <Name>CUSTOMLENGTH</Name>
+              <Type>esriFieldTypeDouble</Type>
+              <IsNullable>false</IsNullable>
+              <Length>8</Length>
+              <Precision>0</Precision>
+              <Scale>0</Scale>
+              <Required>true</Required>
+              <AliasName>CUSTOMLENGTH</AliasName>
+              <ModelName>CUSTOMLENGTH</ModelName>
+            </Field>
+            <Field xsi:type='esri:Field'>
+              <Name>DIMDISPLAY</Name>
+              <Type>esriFieldTypeSmallInteger</Type>
+              <IsNullable>true</IsNullable>
+              <Length>2</Length>
+              <Precision>0</Precision>
+              <Scale>0</Scale>
+              <Required>true</Required>
+              <AliasName>DIMDISPLAY</AliasName>
+              <ModelName>DIMDISPLAY</ModelName>
+            </Field>
+            <Field xsi:type='esri:Field'>
+              <Name>EXTDISPLAY</Name>
+              <Type>esriFieldTypeSmallInteger</Type>
+              <IsNullable>true</IsNullable>
+              <Length>2</Length>
+              <Precision>0</Precision>
+              <Scale>0</Scale>
+              <Required>true</Required>
+              <AliasName>EXTDISPLAY</AliasName>
+              <ModelName>EXTDISPLAY</ModelName>
+            </Field>
+            <Field xsi:type='esri:Field'>
+              <Name>MARKERDISPLAY</Name>
+              <Type>esriFieldTypeSmallInteger</Type>
+              <IsNullable>true</IsNullable>
+              <Length>2</Length>
+              <Precision>0</Precision>
+              <Scale>0</Scale>
+              <Required>true</Required>
+              <AliasName>MARKERDISPLAY</AliasName>
+              <ModelName>MARKERDISPLAY</ModelName>
+            </Field>
+            <Field xsi:type='esri:Field'>
+              <Name>TEXTANGLE</Name>
+              <Type>esriFieldTypeDouble</Type>
+              <IsNullable>true</IsNullable>
+              <Length>8</Length>
+              <Precision>0</Precision>
+              <Scale>0</Scale>
+              <Required>true</Required>
+              <AliasName>TEXTANGLE</AliasName>
+              <ModelName>TEXTANGLE</ModelName>
+            </Field>
+            <Field xsi:type='esri:Field'>
+              <Name>SHAPE_Length</Name>
+              <Type>esriFieldTypeDouble</Type>
+              <IsNullable>true</IsNullable>
+              <Length>8</Length>
+              <Precision>0</Precision>
+              <Scale>0</Scale>
+              <Required>true</Required>
+              <Editable>false</Editable>
+              <AliasName>SHAPE_Length</AliasName>
+              <ModelName>SHAPE_Length</ModelName>
+            </Field>
+            <Field xsi:type='esri:Field'>
+              <Name>SHAPE_Area</Name>
+              <Type>esriFieldTypeDouble</Type>
+              <IsNullable>true</IsNullable>
+              <Length>8</Length>
+              <Precision>0</Precision>
+              <Scale>0</Scale>
+              <Required>true</Required>
+              <Editable>false</Editable>
+              <AliasName>SHAPE_Area</AliasName>
+              <ModelName>SHAPE_Area</ModelName>
+            </Field>
+          </FieldArray>
+        </Fields>
+        <Indexes xsi:type='esri:Indexes'>
+          <IndexArray xsi:type='esri:ArrayOfIndex'>
+            <Index xsi:type='esri:Index'>
+              <Name>FDO_OBJECTID</Name>
+              <IsUnique>true</IsUnique>
+              <IsAscending>true</IsAscending>
+              <Fields xsi:type='esri:Fields'>
+                <FieldArray xsi:type='esri:ArrayOfField'>
+                  <Field xsi:type='esri:Field'>
+                    <Name>OBJECTID</Name>
+                    <Type>esriFieldTypeOID</Type>
+                    <IsNullable>false</IsNullable>
+                    <Length>4</Length>
+                    <Precision>0</Precision>
+                    <Scale>0</Scale>
+                    <Required>true</Required>
+                    <Editable>false</Editable>
+                    <DomainFixed>true</DomainFixed>
+                    <AliasName>OBJECTID</AliasName>
+                    <ModelName>OBJECTID</ModelName>
+                  </Field>
+                </FieldArray>
+              </Fields>
+            </Index>
+            <Index xsi:type='esri:Index'>
+              <Name>FDO_SHAPE</Name>
+              <IsUnique>false</IsUnique>
+              <IsAscending>false</IsAscending>
+              <Fields xsi:type='esri:Fields'>
+                <FieldArray xsi:type='esri:ArrayOfField'>
+                  <Field xsi:type='esri:Field'>
+                    <Name>SHAPE</Name>
+                    <Type>esriFieldTypeGeometry</Type>
+                    <IsNullable>true</IsNullable>
+                    <Length>0</Length>
+                    <Precision>0</Precision>
+                    <Scale>0</Scale>
+                    <Required>true</Required>
+                    <DomainFixed>true</DomainFixed>
+                    <GeometryDef xsi:type='esri:GeometryDef'>
+                      <AvgNumPoints>0</AvgNumPoints>
+                      <GeometryType>esriGeometryPolygon</GeometryType>
+                      <HasM>false</HasM>
+                      <HasZ>false</HasZ>
+                      <SpatialReference xsi:type='esri:GeographicCoordinateSystem'>
+                        <WKT>GEOGCS[&quot;GCS_WGS_1984&quot;,DATUM[&quot;D_WGS_1984&quot;,SPHEROID[&quot;WGS_1984&quot;,6378137.0,298.257223563]],PRIMEM[&quot;Greenwich&quot;,0.0],UNIT[&quot;Degree&quot;,0.0174532925199433]]</WKT>
+                        <XOrigin>-400</XOrigin>
+                        <YOrigin>-400</YOrigin>
+                        <XYScale>1000000000</XYScale>
+                        <XYTolerance>8.98315284119522E-09</XYTolerance>
+                        <HighPrecision>true</HighPrecision>
+                        <LeftLongitude>-180</LeftLongitude>
+                      </SpatialReference>
+                      <GridSize0>1000</GridSize0>
+                    </GeometryDef>
+                    <AliasName>SHAPE</AliasName>
+                    <ModelName>SHAPE</ModelName>
+                  </Field>
+                </FieldArray>
+              </Fields>
+            </Index>
+          </IndexArray>
+        </Indexes>
+        <CLSID>{496764FC-E0C9-11D3-80CE-00C04F601565}</CLSID>
+        <EXTCLSID>{48F935E2-DA66-11D3-80CE-00C04F601565}</EXTCLSID>
+        <RelationshipClassNames xsi:type='esri:Names'></RelationshipClassNames>
+        <AliasName>Empty</AliasName>
+        <ModelName></ModelName>
+        <HasGlobalID>false</HasGlobalID>
+        <GlobalIDFieldName></GlobalIDFieldName>
+        <RasterFieldName></RasterFieldName>
+        <ExtensionProperties xsi:type='esri:PropertySet'>
+          <PropertyArray xsi:type='esri:ArrayOfPropertySetProperty'>
+            <PropertySetProperty xsi:type='esri:PropertySetProperty'>
+              <Key>VERSION</Key>
+              <Value xsi:type='xs:short'>1</Value>
+            </PropertySetProperty>
+            <PropertySetProperty xsi:type='esri:PropertySetProperty'>
+              <Key>STYLESCOLLECTION</Key>
+              <Value xsi:type='esri:XMLPersistedObject'>
+                <Bytes>
+                  KPqyRQH60xGA0wDAT2AVZQAAAAABAAEAAAB4KI7A//nTEYDTAMBPYBVlAQAAAAEAAAAAABAAAABE
+                  AGUAZgBhAHUAbAB0AAAA+eUUeZLI0BGLtggACe5OQQIAAAABAJbE6X4j0dARg4MIAAm5lswDAAAA
+                  AQABAAAUxagkmgVLQAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAPA/AAAAAA0AAAAAAAAA+eUUeZLI
+                  0BGLtggACe5OQQQAAAABAJbE6X4j0dARg4MIAAm5lswFAAAAAQABAAAUxagkmgVLQAAAAAAAAAAA
+                  AAAAAAAAAAABAAAAAAAAAPA/AAAAAA0AAAAAAAAAMZRTiG7g0RGydwAA+HgingYAAAACAJbE6X4j
+                  0dARg4MIAAm5lswHAAAAAQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAChAAAAA
+                  AAAAIEAAAAAAAAAAAAAAAAANAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//zGUU4hu4NERsncAAPh4
+                  Ip4IAAAAAgCWxOl+I9HQEYODCAAJuZbMCQAAAAEAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+                  AAAAAAAAAAAoQAAAAAAAACBAAAAAAAAAAAAAAAAADQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8A
+                  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAB0Plq2kynREZpDAIDH7FyW
+                  CgAAAAQAlsTpfiPR0BGDgwgACbmWzAsAAAABAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+                  /////wIAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAJbE6X4j0dARg4MI
+                  AAm5lswMAAAAAQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+                  AAAAAAAAAAAAAAAAAAAAAAAAAAAAWUAAAAAAAABZQAEAAAAAAAAAAAAAAAAAAAAAAAAAAAF2Plq2
+                  kynREZpDAIDH7FyWAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAo
+                  QAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAADUuMLkY/OEZ3jAKoAS7hRDQAAAAEAAACQAcDU
+                  AQAFQXJpYWz//5GbCdeY4p5Jl1dyuznlXPMAAAAAAAD//wMAAAAAAAIAAAACAAAAAAACAAAAAAAC
+                  AAAAAAACAAAAAAABAAAA/////wAAAAAAAAAAAAAAAA==
+                </Bytes>
+              </Value>
+            </PropertySetProperty>
+            <PropertySetProperty xsi:type='esri:PropertySetProperty'>
+              <Key>REFSCALE</Key>
+              <Value xsi:type='xs:double'>1000</Value>
+            </PropertySetProperty>
+            <PropertySetProperty xsi:type='esri:PropertySetProperty'>
+              <Key>REFSCALEUNITS</Key>
+              <Value xsi:type='xs:int'>11</Value>
+            </PropertySetProperty>
+          </PropertyArray>
+        </ExtensionProperties>
+        <ControllerMemberships xsi:type='esri:ArrayOfControllerMembership'></ControllerMemberships>
+        <FeatureType>esriFTDimension</FeatureType>
+        <ShapeType>esriGeometryPolygon</ShapeType>
+        <ShapeFieldName>SHAPE</ShapeFieldName>
+        <HasM>false</HasM>
+        <HasZ>false</HasZ>
+        <HasSpatialIndex>true</HasSpatialIndex>
+        <AreaFieldName>SHAPE_Area</AreaFieldName>
+        <LengthFieldName>SHAPE_Length</LengthFieldName>
+        <Extent xsi:type='esri:EnvelopeN'>
+          <SpatialReference xsi:type='esri:GeographicCoordinateSystem'>
+            <WKT>GEOGCS[&quot;GCS_WGS_1984&quot;,DATUM[&quot;D_WGS_1984&quot;,SPHEROID[&quot;WGS_1984&quot;,6378137.0,298.257223563]],PRIMEM[&quot;Greenwich&quot;,0.0],UNIT[&quot;Degree&quot;,0.0174532925199433]]</WKT>
+            <XOrigin>-400</XOrigin>
+            <YOrigin>-400</YOrigin>
+            <XYScale>1000000000</XYScale>
+            <XYTolerance>8.98315284119522E-09</XYTolerance>
+            <HighPrecision>true</HighPrecision>
+            <LeftLongitude>-180</LeftLongitude>
+          </SpatialReference>
+        </Extent>
+        <SpatialReference xsi:type='esri:GeographicCoordinateSystem'>
+          <WKT>GEOGCS[&quot;GCS_WGS_1984&quot;,DATUM[&quot;D_WGS_1984&quot;,SPHEROID[&quot;WGS_1984&quot;,6378137.0,298.257223563]],PRIMEM[&quot;Greenwich&quot;,0.0],UNIT[&quot;Degree&quot;,0.0174532925199433]]</WKT>
+          <XOrigin>-400</XOrigin>
+          <YOrigin>-400</YOrigin>
+          <XYScale>1000000000</XYScale>
+          <XYTolerance>8.98315284119522E-09</XYTolerance>
+          <HighPrecision>true</HighPrecision>
+          <LeftLongitude>-180</LeftLongitude>
+        </SpatialReference>
+      </DataElement>
+    </DatasetDefinitions>
+  </WorkspaceDefinition>
+  <WorkspaceData xsi:type='esri:WorkspaceData'></WorkspaceData>
+</esri:Workspace>
