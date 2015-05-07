@@ -1,4 +1,9 @@
+# Exclude any Visual Source Safe files
 *.scc
+
+# Include Divelements Menu and Docking Controls
 !/Divelements/SandBar.dll
 !/Divelements/SandDock.dll
+
+# Include an Interop wrapper of MSXML
 !/MSXML/Interop.MSXML.dll
